@@ -55,8 +55,8 @@ https://templatemo.com/tm-570-chain-app-dev
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="img/cclogo1.png" style="width: 15%">
+            <a href="index.html" class="col-2">
+              <img src="img/cclogo1.png" style="margin-top: 10px; width: 15%">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
