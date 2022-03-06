@@ -95,7 +95,7 @@ https://templatemo.com/tm-570-chain-app-dev
                   <div class="col-3"></div>
                   <div class="col-4">
                     <div class="white-button first-button scroll-to-section">
-                      <a href="/pmf">Start Test<i class="fab fa-apple"></i></a>
+                      <a href="localhost/onlineexamination">Start Test<i class="fab fa-apple"></i></a>
                     </div>
                   </div>
                 </div>
