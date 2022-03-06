@@ -24,6 +24,9 @@ Route::get('/home', function () {
 Route::get('/userhome', function () {
     return view('userhome');
 });
+Route::get('/pmf', function () {
+    return view('pmf');
+});
 // Register and Login
 Route::get('/register', function () {
     return view('register');
