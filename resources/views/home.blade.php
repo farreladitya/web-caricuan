@@ -25,7 +25,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <a class="btn solid" href="/userhome">LOGIN</a>
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">

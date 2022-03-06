@@ -30,7 +30,9 @@ https://templatemo.com/tm-570-chain-app-dev
     <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+        </style>
   </head>
 
 <body>
@@ -65,7 +67,7 @@ https://templatemo.com/tm-570-chain-app-dev
               <li class="scroll-to-section"><a href="#services">Plan My Future</a></li>
               <li class="scroll-to-section"><a href="#about">Course</a></li>
               <li class="scroll-to-section"><a href="#pricing">Recruitment</a></li>
-              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li>
+              <li><div class="gradient-button"><a id="modal_trigger" href="/home"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li>
             </ul>
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -76,7 +78,7 @@ https://templatemo.com/tm-570-chain-app-dev
       </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
+  {{-- <!-- ***** Header Area End ***** -->
 
   <div id="modal" class="popupContainer" style="display:none;">
     <div class="popupHeader">
@@ -162,7 +164,7 @@ https://templatemo.com/tm-570-chain-app-dev
             </form>
         </div>
     </section>
-</div>
+</div> --}}
 
   <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
@@ -173,8 +175,8 @@ https://templatemo.com/tm-570-chain-app-dev
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h2 style="font-size: 100px">Cari.Cuan</h2>
-                    <p>Cari.Cuan adalah platform untuk menghubungkan para pelamar kerja dan fresh <br> graduate dengan para penyedia lapangan pekerjaan dengan rekomendasi pelatihan <br> yang dapat disesuaikan dengan Plan My Future Test </p>
+                    <h2 style="font-size: 100px; font-family: 'Poppins', sans-serif;">Cari.Cuan</h2>
+                    <p>Cari.Cuan is a platform to connect job applicants and fresh graduate <br> with job providers with training recommendations which can be<br>adjusted with Plan My Future Test </p>
                   </div>
                   <div class="col-lg-12">
                     <div class="white-button first-button scroll-to-section">
@@ -205,7 +207,7 @@ https://templatemo.com/tm-570-chain-app-dev
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
             <h4>Plan <em>My Future</em> Test</h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Luasnya bidang lapangan pekerjaan akibat perkembangan <br> teknologi menjadi salah satu kendala dalam penentuan pilihan. <br> Kami hadir membantu anda menentukan pilihan melalui Plan My Future Test</p>
+            <p>The field of employment due to developments Technology is one of the obstacles in making choices. We are here to help you make choices through Plan My Future Test.</p>
           </div>
         </div>
       </div>
@@ -216,28 +218,28 @@ https://templatemo.com/tm-570-chain-app-dev
           <div class="service-item first-service">
             <div class="icon"></div>
             <h4>Ketahui Keahlian Anda</h4>
-            <p>You are not allowed to redistribute this template ZIP file on any other website.</p>
+            <p>Plan My Future mengetahui minat bakat serta keahlian anda yang akan berguna di dunia kerja</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item second-service">
             <div class="icon"></div>
             <h4>Soal Psikologi Terbaik</h4>
-            <p>You are allowed to use the Chain App Dev HTML template. Feel free to modify or edit this layout.</p>
+            <p>Plan My Future memberikan soal psikologi yang telah terusji di berbagai tes psikologi di Indonesia</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item third-service">
             <div class="icon"></div>
-            <h4>30 Menit Saja</h4>
-            <p>If this template is beneficial for your work, please support us <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">a little via PayPal</a>. Thank you.</p>
+            <h4>Hasil yang Cepat</h4>
+            <p>Plan My Future memberikan hasill tes psikologi dalam waktu kurang dari satu minggu</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item fourth-service">
             <div class="icon"></div>
-            <h4>24/7 Help &amp; Support</h4>
-            <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
+            <h4>Rencanakan Langkah Anda</h4>
+            <p>My Future Plan membantu anda dalam mempermudah merencanakan karier anda ke depan</p>
           </div>
         </div>
       </div>
@@ -249,41 +251,34 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="section-heading">
-            <h4>About <em>What We Do</em> &amp; Who We Are</h4>
+            <h4>Skill Up <em>Course</em> </h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+            <p>Gapai masa depan yang cerah dengan mengasah skill sesuai minat bakat anda</p>
           </div>
           <div class="row">
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Maintance Problems</a></h4>
-                <p>Lorem Ipsum Text</p>
+                <h4><a href="#">Bersama Mentor Terbaik</a></h4>
+                <p>Sesuai bidangnya</p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">24/7 Support &amp; Help</a></h4>
-                <p>Lorem Ipsum Text</p>
+                <h4><a href="#">Akses Video</a></h4>
+                <p>Dimanapun & Kapanpun</p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Fixing Issues About</a></h4>
-                <p>Lorem Ipsum Text</p>
+                <h4><a href="#">Buat Jadwal</a></h4>
+                <p>Anda Sendiri</p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Co. Development</a></h4>
-                <p>Lorem Ipsum Text</p>
+                <h4><a href="#">Notifikasi Video Terbaru</a></h4>
+                <p>Setiap Harinya</p>
               </div>
-            </div>
-            <div class="col-lg-12">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor idunte ut labore et dolore adipiscing  magna.</p>
-              <div class="gradient-button">
-                <a href="#">Start 14-Day Free Trial</a>
-              </div>
-              <span>*No Credit Card Required</span>
             </div>
           </div>
         </div>
@@ -301,9 +296,9 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h4>Check What <em>The Clients Say</em> About Our App Dev</h4>
+            <h4>Check What <em>The Clients Say</em> About Cari.Cuan</h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+            <p>Lebih dari 200 Perusahaan dan 1000 Pelamar telah bergabung dengan kami</p>
           </div>
         </div>
         <div class="col-lg-12">
@@ -428,8 +423,7 @@ https://templatemo.com/tm-570-chain-app-dev
                             <div class="col-lg-12">
                               <div class="client-content">
                                 <img src="assets/images/quote.png" alt="">
-                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
-                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                                <p>“Cari.Cuan memudahkan rekruitmen perusahaan kami. Dengan adanya CV dan pelatihan yang telah tersedia membuat pelamar teredukasi dengan baik dan perusahaan kami mendapatkan resources yang siap kerja ”</p>
                               </div>
                               <div class="down-content">
                                 <img src="assets/images/client-image.jpg" alt="">
@@ -546,37 +540,35 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h4>We Have The Best Pre-Order <em>Prices</em> You Can Get</h4>
+            <h4>Lebih dari <em>200 Perusahaan</em> Membutuhkan Anda!</h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+            <p>Berbagai perusahaan dan berbagai posisi sedang menunggu anda</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="pricing-item-regular">
-            <span class="price">$12</span>
-            <h4>Standard Plan App</h4>
+            <h4>PT Unilever Indonesia</h4>
             <div class="icon">
-              <img src="assets/images/pricing-table-01.png" alt="">
+              <img src="assets/images/unilever.png" alt="" >
             </div>
             <ul>
-              <li>Lorem Ipsum Dolores</li>
-              <li>20 TB of Storage</li>
-              <li class="non-function">Life-time Support</li>
-              <li class="non-function">Premium Add-Ons</li>
-              <li class="non-function">Fastest Network</li>
-              <li class="non-function">More Options</li>
+              <li>Back-End Developer</li>
+              <li>System Analyst</li>
+              <li>Accounting</li>
+              <li class="non-function">Quality Control</li>
+              <li class="non-function">Front-End Developer</li>
+              <li class="non-function">Finance</li>
             </ul>
             <div class="border-button">
-              <a href="#">Purchase This Plan Now</a>
+              <a href="#">Apply Now</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="pricing-item-pro">
-            <span class="price">$25</span>
-            <h4>Business Plan App</h4>
+            <h4>PT Tokopedia</h4>
             <div class="icon">
-              <img src="assets/images/pricing-table-01.png" alt="">
+              <img src="assets/images/tokopedia.png" alt="">
             </div>
             <ul>
               <li>Lorem Ipsum Dolores</li>
@@ -587,16 +579,15 @@ https://templatemo.com/tm-570-chain-app-dev
               <li class="non-function">More Options</li>
             </ul>
             <div class="border-button">
-              <a href="#">Purchase This Plan Now</a>
+              <a href="#">Apply Now</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="pricing-item-regular">
-            <span class="price">$66</span>
-            <h4>Premium Plan App</h4>
+            <h4>PT XL Axiata</h4>
             <div class="icon">
-              <img src="assets/images/pricing-table-01.png" alt="">
+              <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
             </div>
             <ul>
               <li>Lorem Ipsum Dolores</li>
@@ -607,7 +598,7 @@ https://templatemo.com/tm-570-chain-app-dev
               <li>More Options</li>
             </ul>
             <div class="border-button">
-              <a href="#">Purchase This Plan Now</a>
+              <a href="#">Apply Now</a>
             </div>
           </div>
         </div>
