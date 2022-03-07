@@ -247,8 +247,8 @@ body {
   color: #fff !important;
   text-transform: capitalize;
   font-size: 15px;
-  background: rgb(19,175,240);
-  background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+background: rgb(44,75,130);
+background: linear-gradient(176deg, rgba(44,75,130,1) 51%, rgba(147,221,222,1) 100%);
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
@@ -928,7 +928,7 @@ Banner Style
 
 .main-banner .left-content p {
   margin-bottom: 45px;
-  color: #2a2a2a;
+  color: #ffffff;
   font-weight: 400;
 }
 
@@ -1271,7 +1271,7 @@ The Clients
 
 .the-clients .nacc .thumb .client-content {
   padding: 60px 30px;
-  background-image: url(../images/client-bg.png);
+  background-image: url(../images/client-bgnew.png);
   background-size: cover;
   border-radius: 50px;
   width: 100%;
@@ -1425,7 +1425,7 @@ The Clients
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../images/pro-table-top.png);
+  background-image: url(../images/pro-table-topnew.png);
   z-index: 0;
   content: '';
   width: 281px;
@@ -1438,7 +1438,7 @@ The Clients
   right: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/pro-table-bottom.png);
+  background-image: url(../images/pro-table-bottomnew.png);
   z-index: 0;
   content: '';
   width: 100%;
@@ -1572,7 +1572,7 @@ Footer Style
 */
 
 footer {
-  background-image: url(../images/footer-bg.png);
+  background-image: url(../images/footer-1copyok.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1981,7 +1981,7 @@ responsive
     display: none;
   }
   .main-banner .left-content h2 {
-    color: #2a2a2a;
+    color:#fff;
     margin-right: 0;
   }
   .main-banner .left-content p {

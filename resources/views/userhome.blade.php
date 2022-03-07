@@ -95,7 +95,7 @@ https://templatemo.com/tm-570-chain-app-dev
                   <div class="col-3"></div>
                   <div class="col-4">
                     <div class="white-button first-button scroll-to-section">
-                      <a href="/pmf">Start Test<i class="fab fa-apple"></i></a>
+                      <a href="/pmf">Start Test<i href="/home" class="fab fa-apple"></i></a>
                     </div>
                   </div>
                 </div>
@@ -120,85 +120,35 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h4>Join our mailing list to receive the news &amp; latest trends</h4>
+            <h4>Join Us To Receive The News & Latest Informations About Job Vacancy!</h4>
           </div>
-        </div>
-        <div class="col-lg-6 offset-lg-3">
-          <form id="search" action="#" method="GET">
-            <div class="row">
-              <div class="col-lg-6 col-sm-6">
-                <fieldset>
-                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <fieldset>
-                  <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <div class="footer-widget">
-            <h4>Contact Us</h4>
-            <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
-            <p><a href="#">010-020-0340</a></p>
-            <p><a href="#">info@company.co</a></p>
+            <h4>Our Developer</h4>
+            <p>Nur Aida Febrianti</p>
+            <p>Firdaus Wahyu Gama</p>
+            <p>Febina Mushen Anjelita</p>
+            <p>Raihanda Naufal Ashava</p>
+            <p>Farrel Istihsan Aditya</p>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <div class="footer-widget">
             <h4>About Us</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Pricing</a></li>
+                <p>We are Rukun Islam team’s from RBPL class B</p>
             </ul>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <div class="footer-widget">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#">Free Apps</a></li>
-              <li><a href="#">App Engine</a></li>
-              <li><a href="#">Programming</a></li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">App News</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">App Dev Team</a></li>
-              <li><a href="#">Digital Web</a></li>
-              <li><a href="#">Normal Apps</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="footer-widget">
-            <h4>About Our Company</h4>
+            <h4>About Our Platform</h4>
             <div class="logo">
-              <img src="assets/images/white-logo.png" alt="">
+              <img src="assets/images/caricuangede.png" style="max-width: 175px" alt="">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="copyright-text">
-            <p>Copyright © 2022 Chain App Dev Company. All Rights Reserved.
-          <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a><br>
-
-          Distributed By: <a href="https://themewagon.com/" target="_blank" title="Bootstrap Template World">ThemeWagon</a>
-        </p>
           </div>
         </div>
       </div>

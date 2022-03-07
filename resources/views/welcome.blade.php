@@ -175,16 +175,8 @@ https://templatemo.com/tm-570-chain-app-dev
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h2 style="font-size: 100px; font-family: 'Poppins', sans-serif;">Cari.Cuan</h2>
+                    <h2 style="font-size: 65px; font-family: 'Poppins', sans-serif; margin-top: 150px; color: #ffff">Cari.Cuan</h2>
                     <p>Cari.Cuan is a platform to connect job applicants and fresh graduate <br> with job providers with training recommendations which can be<br>adjusted with Plan My Future Test </p>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="white-button first-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-apple"></i></a>
-                    </div>
-                    <div class="white-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -217,29 +209,29 @@ https://templatemo.com/tm-570-chain-app-dev
         <div class="col-lg-3">
           <div class="service-item first-service">
             <div class="icon"></div>
-            <h4>Ketahui Keahlian Anda</h4>
-            <p>Plan My Future mengetahui minat bakat serta keahlian anda yang akan berguna di dunia kerja</p>
+            <h4>Know Your Skills</h4>
+            <p>Plan My Future helps you to identify your interests, talents and skills that will be useful in the world of work</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item second-service">
             <div class="icon"></div>
-            <h4>Soal Psikologi Terbaik</h4>
-            <p>Plan My Future memberikan soal psikologi yang telah terusji di berbagai tes psikologi di Indonesia</p>
+            <h4>Best Psychology Questions</h4>
+            <p>Plan My Future provides psychological questions that have been tested in various psychological tests in Indonesia</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item third-service">
             <div class="icon"></div>
-            <h4>Hasil yang Cepat</h4>
-            <p>Plan My Future memberikan hasill tes psikologi dalam waktu kurang dari satu minggu</p>
+            <h4>Quick Result</h4>
+            <p>Plan My Future provides psychological test results in less than a week</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item fourth-service">
             <div class="icon"></div>
-            <h4>Rencanakan Langkah Anda</h4>
-            <p>My Future Plan membantu anda dalam mempermudah merencanakan karier anda ke depan</p>
+            <h4>Plan Your Steps</h4>
+            <p>My Future Plan helps you to make it easier to plan your future career</p>
           </div>
         </div>
       </div>
@@ -253,31 +245,31 @@ https://templatemo.com/tm-570-chain-app-dev
           <div class="section-heading">
             <h4>Skill Up <em>Course</em> </h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Gapai masa depan yang cerah dengan mengasah skill sesuai minat bakat anda</p>
+            <p>Reach a bright future by honing skills according to your talents and interests</p>
           </div>
           <div class="row">
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Bersama Mentor Terbaik</a></h4>
-                <p>Sesuai bidangnya</p>
+                <h4><a href="#">With the Best Mentor</a></h4>
+                <p>Certified Mentors</p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Akses Video</a></h4>
-                <p>Dimanapun & Kapanpun</p>
+                <h4><a href="#">Video Access</a></h4>
+                <p>Everywhere & Anytime</p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Buat Jadwal</a></h4>
-                <p>Anda Sendiri</p>
+                <h4><a href="#">Create Schedule</a></h4>
+                <p>Customize your Schedule</p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Notifikasi Video Terbaru</a></h4>
-                <p>Setiap Harinya</p>
+                <h4><a href="#">Latest Video</a></h4>
+                <p>Everyday</p>
               </div>
             </div>
           </div>
@@ -296,9 +288,9 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h4>Check What <em>The Clients Say</em> About Cari.Cuan</h4>
+            <h4>Check What <em>The Clients Said</em> About Cari.Cuan</h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Lebih dari 200 Perusahaan dan 1000 Pelamar telah bergabung dengan kami</p>
+            <p>More than 200 Companies and 1000 Applicants have joined us </p>
           </div>
         </div>
         <div class="col-lg-12">
@@ -311,8 +303,8 @@ https://templatemo.com/tm-570-chain-app-dev
                       <div class="thumb">
                         <div class="row">
                           <div class="col-lg-4 col-sm-4 col-12">
-                            <h4>David Martino Co</h4>
-                            <span class="date">30 November 2021</span>
+                            <h4>Darel Mushava</h4>
+                            <span class="date">26 Februari 2020</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 d-none d-sm-block">
                             <span class="category">Financial Apps</span>
@@ -332,8 +324,8 @@ https://templatemo.com/tm-570-chain-app-dev
                       <div class="thumb">
                         <div class="row">
                           <div class="col-lg-4 col-sm-4 col-12">
-                            <h4>Jake Harris Nyo</h4>
-                            <span class="date">29 November 2021</span>
+                            <h4>Raihanda Naufal</h4>
+                            <span class="date">13 September 2020</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 d-none d-sm-block">
                             <span class="category">Digital Business</span>
@@ -353,8 +345,8 @@ https://templatemo.com/tm-570-chain-app-dev
                       <div class="thumb">
                         <div class="row">
                           <div class="col-lg-4 col-sm-4 col-12">
-                            <h4>May Catherina</h4>
-                            <span class="date">27 November 2021</span>
+                            <h4>Farrel Istihsan</h4>
+                            <span class="date">19 Septemberber 2020</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 d-none d-sm-block">
                             <span class="category">Business &amp; Economics</span>
@@ -374,8 +366,8 @@ https://templatemo.com/tm-570-chain-app-dev
                       <div class="thumb">
                         <div class="row">
                           <div class="col-lg-4 col-sm-4 col-12">
-                            <h4>Random User</h4>
-                            <span class="date">24 November 2021</span>
+                            <h4>Firdaus Wahyu</h4>
+                            <span class="date">18 Oktober 2020</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 d-none d-sm-block">
                             <span class="category">New App Ecosystem</span>
@@ -395,8 +387,8 @@ https://templatemo.com/tm-570-chain-app-dev
                       <div class="thumb">
                         <div class="row">
                           <div class="col-lg-4 col-sm-4 col-12">
-                            <h4>Mark Amber Do</h4>
-                            <span class="date">21 November 2021</span>
+                            <h4>Febina Anjelita</h4>
+                            <span class="date">28 Februari 2020</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 d-none d-sm-block">
                             <span class="category">Web Development</span>
@@ -423,13 +415,13 @@ https://templatemo.com/tm-570-chain-app-dev
                             <div class="col-lg-12">
                               <div class="client-content">
                                 <img src="assets/images/quote.png" alt="">
-                                <p>“Cari.Cuan memudahkan rekruitmen perusahaan kami. Dengan adanya CV dan pelatihan yang telah tersedia membuat pelamar teredukasi dengan baik dan perusahaan kami mendapatkan resources yang siap kerja ”</p>
+                                <p>“Cari.Cuan facilitates the recruitment of our company. With a CV and available training, applicants are well educated and our company gets ready-to-work resources.”</p>
                               </div>
                               <div class="down-content">
                                 <img src="assets/images/client-image.jpg" alt="">
                                 <div class="right-content">
-                                  <h4>David Martino</h4>
-                                  <span>CEO of David Company</span>
+                                  <h4>Darel Mushava</h4>
+                                  <span>CEO of Darel Company</span>
                                 </div>
                               </div>
                             </div>
@@ -540,9 +532,9 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h4>Lebih dari <em>200 Perusahaan</em> Membutuhkan Anda!</h4>
+            <h4>More than <em>200 Companies</em> Need You!</h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Berbagai perusahaan dan berbagai posisi sedang menunggu anda</p>
+            <p> Various companies and various positions are waiting for you</p>
           </div>
         </div>
         <div class="col-lg-4">
@@ -571,12 +563,12 @@ https://templatemo.com/tm-570-chain-app-dev
               <img src="assets/images/tokopedia.png" alt="">
             </div>
             <ul>
-              <li>Lorem Ipsum Dolores</li>
-              <li>50 TB of Storage</li>
-              <li>Life-time Support</li>
-              <li>Premium Add-Ons</li>
-              <li class="non-function">Fastest Network</li>
-              <li class="non-function">More Options</li>
+              <li>Back-End Developer</li>
+              <li>System Analyst</li>
+              <li>Accounting</li>
+              <li class="non-function">Product Manager</li>
+              <li class="non-function">Admin Marketing</li>
+              <li class="non-function">Finance</li>
             </ul>
             <div class="border-button">
               <a href="#">Apply Now</a>
@@ -590,12 +582,12 @@ https://templatemo.com/tm-570-chain-app-dev
               <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
             </div>
             <ul>
-              <li>Lorem Ipsum Dolores</li>
-              <li>120 TB of Storage</li>
-              <li>Life-time Support</li>
-              <li>Premium Add-Ons</li>
-              <li>Fastest Network</li>
-              <li>More Options</li>
+              <li>Admin Marketing</li>
+              <li>System Analyst</li>
+              <li>Accounting</li>
+              <li class="non-function">Back-End Developer</li>
+              <li class="non-function">Front-End Developer</li>
+              <li class="non-function">Finance</li>
             </ul>
             <div class="border-button">
               <a href="#">Apply Now</a>
@@ -611,85 +603,35 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h4>Join our mailing list to receive the news &amp; latest trends</h4>
+            <h4>Join Us To Receive The News & Latest Informations About Job Vacancy!</h4>
           </div>
-        </div>
-        <div class="col-lg-6 offset-lg-3">
-          <form id="search" action="#" method="GET">
-            <div class="row">
-              <div class="col-lg-6 col-sm-6">
-                <fieldset>
-                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <fieldset>
-                  <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <div class="footer-widget">
-            <h4>Contact Us</h4>
-            <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
-            <p><a href="#">010-020-0340</a></p>
-            <p><a href="#">info@company.co</a></p>
+            <h4>Our Developer</h4>
+            <p>Nur Aida Febrianti</p>
+            <p>Firdaus Wahyu Gama</p>
+            <p>Febina Mushen Anjelita</p>
+            <p>Raihanda Naufal Ashava</p>
+            <p>Farrel Istihsan Aditya</p>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <div class="footer-widget">
             <h4>About Us</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Pricing</a></li>
+                <p>We are Rukun Islam team’s from RBPL class B</p>
             </ul>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           <div class="footer-widget">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#">Free Apps</a></li>
-              <li><a href="#">App Engine</a></li>
-              <li><a href="#">Programming</a></li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">App News</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">App Dev Team</a></li>
-              <li><a href="#">Digital Web</a></li>
-              <li><a href="#">Normal Apps</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="footer-widget">
-            <h4>About Our Company</h4>
+            <h4>About Our Platform</h4>
             <div class="logo">
-              <img src="assets/images/white-logo.png" alt="">
+              <img src="assets/images/caricuangede.png" style="max-width: 175px"alt="">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="copyright-text">
-            <p>Copyright © 2022 Chain App Dev Company. All Rights Reserved.
-          <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a><br>
-
-          Distributed By: <a href="https://themewagon.com/" target="_blank" title="Bootstrap Template World">ThemeWagon</a>
-        </p>
           </div>
         </div>
       </div>
