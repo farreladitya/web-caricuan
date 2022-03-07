@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,11 @@ Route::get('/userhome', function () {
 Route::get('/pmf', function () {
     return view('pmf');
 });
+<<<<<<< HEAD
+=======
+// Register and Login
+Route::get('/register', function () {
+    return view('register');
+});
+Route::post('/save', [RegisterController::class, 'store']);
+>>>>>>> a13daa18b2251c6a3645819463ebff41ea5c9875

@@ -5,18 +5,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Plan My Future Test</title>
     <link rel="stylesheet" href="style.css">
+=======
+    <title>Awesome Quiz App | CodingNepal</title>
+    <link rel="stylesheet" href="assets/css/stylepmf.css">
+>>>>>>> a13daa18b2251c6a3645819463ebff41ea5c9875
     <!-- FontAweome CDN Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+<<<<<<< HEAD
     <!-- start Quiz button -->
     <div class="start_btn"><button>Start Test</button></div>
 
     <!-- Info Box -->
     <div class="info_box">
         <div class="info-title"><span>Some Rules of this Test</span></div>
+=======
+
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+>>>>>>> a13daa18b2251c6a3645819463ebff41ea5c9875
         <div class="info-list">
             <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
             <div class="info">2. Once you select your answer, it can't be undone.</div>
@@ -25,7 +40,11 @@
             <div class="info">5. You'll get points on the basis of your correct answers.</div>
         </div>
         <div class="buttons">
+<<<<<<< HEAD
             <button class="quit">Exit Test</button>
+=======
+            <button class="quit">Exit Quiz</button>
+>>>>>>> a13daa18b2251c6a3645819463ebff41ea5c9875
             <button class="restart">Continue</button>
         </div>
     </div>
@@ -33,7 +52,11 @@
     <!-- Quiz Box -->
     <div class="quiz_box">
         <header>
+<<<<<<< HEAD
             <div class="title">Plan My Future Test</div>
+=======
+            <div class="title">Awesome Quiz Application</div>
+>>>>>>> a13daa18b2251c6a3645819463ebff41ea5c9875
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
                 <div class="timer_sec">15</div>
@@ -74,10 +97,17 @@
     </div>
 
     <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+<<<<<<< HEAD
     <script src="js/questions.js"></script>
 
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="js/script.js"></script>
+=======
+    <script src="assets/js/question.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="assets/js/scriptpmf.js"></script>
+>>>>>>> a13daa18b2251c6a3645819463ebff41ea5c9875
 
 </body>
 </html>

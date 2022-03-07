@@ -26,7 +26,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <a class="btn solid" href="/userhome">LOGIN</a>
+            <input type="submit" class="btn" value="Sign in" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -43,8 +43,13 @@
               </a>
             </div>
           </form>
-          <form action="#" class="sign-up-form">
+          <form action="/save" method="POST" class="sign-up-form">
+              @csrf
             <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Name" />
+            </div>
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" placeholder="Username" />
