@@ -14,7 +14,14 @@ class CreateLamaranTable extends Migration
     public function up()
     {
         Schema::create('lamaran', function (Blueprint $table) {
-            $table->id('id_users');
+            $table->id();
+
+            $table->unsignedBigInteger('id_users');
+            $table->foreign('id_users')->references('id')->on('users');
+
+            $table->unsignedBigInteger('id_lowongan');
+            $table->foreign('id_lowongan')->references('id')->on('lowongan');
+
             $table->text('link_cv');
             $table->text('filependukung');
             $table->text('feedback');

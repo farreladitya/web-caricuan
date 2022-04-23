@@ -14,8 +14,17 @@ class CreatePlanmyfutureTable extends Migration
     public function up()
     {
         Schema::create('planmyfuture', function (Blueprint $table) {
-            $table->id('id_user');
+            $table->id();
+
+            $table->unsignedBigInteger('id_users');
+            $table->foreign('id_users')->references('id')->on('users');
+
+            $table->text('soal');
+            $table->text('jawaban');
             $table->integer('hasil_pmf');
+            $table->dateTime('waktu_mulai');
+            $table->dateTime('waktu_selesai');
+            $table->dateTime('waktu_pengerjaan');
             $table->timestamps();
         });
     }

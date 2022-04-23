@@ -14,8 +14,14 @@ class CreateRekomskillupTable extends Migration
     public function up()
     {
         Schema::create('rekomskillup', function (Blueprint $table) {
-            $table->id('id_users');
-            $table->string('id_skillup');
+            $table->id();
+
+            $table->unsignedBigInteger('id_users');
+            $table->foreign('id_users')->references('id')->on('users');
+
+            $table->unsignedBigInteger('id_skillup');
+            $table->foreign('id_skillup')->references('id')->on('skillup');
+
             $table->timestamps();
         });
     }

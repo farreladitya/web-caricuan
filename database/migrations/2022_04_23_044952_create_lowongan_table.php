@@ -14,7 +14,11 @@ class CreateLowonganTable extends Migration
     public function up()
     {
         Schema::create('lowongan', function (Blueprint $table) {
-            $table->id('id_lowongan');
+            $table->id();
+
+            $table->unsignedBigInteger('id_users');
+            $table->foreign('id_users')->references('id')->on('users');
+
             $table->string('jabatan');
             $table->string('deskripsi_lowongan');
             $table->string('gaji');

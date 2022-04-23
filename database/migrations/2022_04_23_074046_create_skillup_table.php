@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSoalpmfTable extends Migration
+class CreateSkillupTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class CreateSoalpmfTable extends Migration
      */
     public function up()
     {
-        Schema::create('soalpmf', function (Blueprint $table) {
-            $table->id('id_soalpmf');
-            $table->text('soal');
+        Schema::create('skillup', function (Blueprint $table) {
+            $table->id();
+            $table->string('nama_skillup');
+            $table->string('deskripsi_skillup');
+            $table->string('instansi');
+            $table->string('link_video');
+            $table->dateTime("start_date");
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateSoalpmfTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('soalpmf');
+        Schema::dropIfExists('skillup');
     }
 }
