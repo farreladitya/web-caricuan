@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePelamarTable extends Migration
+class CreateLamaranTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreatePelamarTable extends Migration
      */
     public function up()
     {
-        Schema::create('pelamar', function (Blueprint $table) {
-            $table->id();
+        Schema::create('lamaran', function (Blueprint $table) {
+            $table->id('id_users');
+            $table->text('link_cv');
+            $table->text('filependukung');
+            $table->text('feedback');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreatePelamarTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pelamar');
+        Schema::dropIfExists('lamaran');
     }
 }
