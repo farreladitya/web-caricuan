@@ -67,7 +67,7 @@ https://templatemo.com/tm-570-chain-app-dev
               <li class="scroll-to-section"><a href="#services">Plan My Future</a></li>
               <li class="scroll-to-section"><a href="#about">Course</a></li>
               <li class="scroll-to-section"><a href="#pricing">Recruitment</a></li>
-              <li><div class="gradient-button"><a id="modal_trigger" href="/home"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li>
+              <li><div class="gradient-button"><a id="modal_trigger" href="/login"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li>
             </ul>
             <a class='menu-trigger'>
                 <span>Menu</span>

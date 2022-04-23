@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\RegisterController;
 
 /*
@@ -38,3 +39,15 @@ Route::get('/register', function () {
     return view('register');
 });
 Route::post('/save', [RegisterController::class, 'store']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/applist', [App\Http\Controllers\HomeController::class, 'index'])->name('applist');
+Route::middleware('role:admin')->get('/findjob', function () {
+    return view('findjob');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
