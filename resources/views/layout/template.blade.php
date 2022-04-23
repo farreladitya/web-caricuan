@@ -79,11 +79,9 @@ https://templatemo.com/tm-570-chain-app-dev
     </div>
   </header>
     <!-- ***** Header Area End ***** -->
-
-    <div class="container">
+{{-- startcontent --}}
             @yield('content')
-
-    </div>
+{{-- endcontent --}}
 
 
   <footer id="newsletter">

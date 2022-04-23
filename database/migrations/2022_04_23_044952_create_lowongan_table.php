@@ -20,7 +20,8 @@ class CreateLowonganTable extends Migration
             $table->foreign('id_users')->references('id')->on('users');
 
             $table->string('jabatan');
-            $table->string('deskripsi_lowongan');
+            $table->string('tentang_lowongan');
+            $table->string('persyaratan');
             $table->string('gaji');
             $table->string('perusahaan');
             $table->timestamps();
