@@ -27,6 +27,9 @@ Route::get('/userhome', function () {
 Route::get('/pmf', function () {
     return view('pmf');
 });
+Route::get('/findjob', function () {
+    return view('findjob');
+});
 // Register and Login
 Route::get('/register', function () {
     return view('register');
