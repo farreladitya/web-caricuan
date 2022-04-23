@@ -27,6 +27,9 @@ Route::get('/userhome', function () {
 Route::get('/pmf', function () {
     return view('pmf');
 });
+Route::get('/applist', function () {
+    return view('applist');
+});
 Route::get('/findjob', function () {
     return view('findjob');
 });
