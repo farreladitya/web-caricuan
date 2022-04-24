@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <title>Chain App Dev - App Landing Page HTML5 Template</title>
+    <title>Cari.Cuan</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -66,16 +66,16 @@ https://templatemo.com/tm-570-chain-app-dev
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#services">Plan My Future</a></li>
-              <li class="scroll-to-section"><a href="#about">Course</a></li>
-              <li class="scroll-to-section"><a href="#pricing">Recruitment</a></li>
-              <li><div class="gradient-button"><a id="modal_trigger" href="/home"><i class="fa fa-sign-in-alt"></i>  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+              <li class="scroll-to-section"><a href="#about">Skill Up</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Find Job</a></li>
+              <li><div class="gradient-button"><a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>Hi
                 {{ Auth::user()->name }}
             </a>
 
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{{ route('logout') }}"
                    onclick="event.preventDefault();
-                                 document.getElementById('logout-form').submit();">
+                                 document.getElementById('logout-form').submit();"><i class="fa fa-sign-in-alt"></i>
                     {{ __('Logout') }}
                 </a>
 

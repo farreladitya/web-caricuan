@@ -1,4 +1,4 @@
-@extends('layout.template')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -69,7 +69,24 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
+                        <div class="row mb-3">
+                            <div class="form-check">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Job Seeker
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="1" checked>
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Company
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="2">
+                              </div>
+                        </div>
+
+
+
+                        <div class="row mb-0 text-center">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
