@@ -9,7 +9,7 @@
             <div class="col-lg-6 align-self-center">
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
-                  <div class="col-lg-12">
+                  <div class="col-lg-12" style="margin-left: -150px">
                     <h2 style="font-size: 65px; font-family: 'Poppins', sans-serif; margin-top: 150px; color: #ffff">Cari.Cuan</h2>
                     <p>Cari.Cuan is a platform to connect job applicants and fresh graduate <br> with job providers with training recommendations which can be<br>adjusted with Plan My Future Test </p>
                   </div>

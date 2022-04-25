@@ -8,7 +8,10 @@
 }
 
 body {
-    background: #007bff;
+    background: #feffff;
+    background-image: url(../images/pro-table-topnew.png);
+    background-repeat: no-repeat;
+    background-size: 600px;
 }
 
 ::selection {
