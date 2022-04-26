@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class Applist extends Controller
+class ApplistController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -24,6 +24,6 @@ class Applist extends Controller
      */
     public function index()
     {
-        return view('applist');
+        return view('/applist');
     }
 }
