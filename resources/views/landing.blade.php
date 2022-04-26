@@ -20,10 +20,11 @@
             <h2 class="title" style="text-align: center">{{ __('Login') }}</h2>
 
             <form method="POST" action="{{ route('login') }}">
+            @csrf
+
             <div class="input-field">
               <i class="fas fa-user"></i>
               <label for="email">{{ __('Email Address') }}</label>
-              <div class="col-md-6">
                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                 @error('email')
@@ -31,7 +32,7 @@
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror
-            </div>
+
             </div>
 
             <div class="input-field">
@@ -62,7 +63,7 @@
 
             <div class="row mb-0">
                 <div class="col-md-8 offset-md-4">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary" class="btn btn-primary">
                         {{ __('Login') }}
                     </button>
 
@@ -73,6 +74,7 @@
                     @endif
                 </div>
             </div>
+
             </form>
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
