@@ -42,7 +42,7 @@ Route::post('/save', [RegisterController::class, 'store']);
 
 Auth::routes();
 
-Route::get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])->name('applist');
+Route::middleware('role:admin')->get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])->name('applist');
 Route::middleware('role:admin')->get('/findjob', [App\Http\Controllers\FindJobController::class, 'index'])->name('findjob');
 
 Auth::routes();

@@ -13,7 +13,7 @@
                 </div>
                 </div>
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-6">
                         <form action="/applist/cari" method="GET">
                         <div class="form-group has-search center float-right">
                         <input type="text" class="form-control" placeholder="Search for Position..." name="cari" value="{{ old('cari') }}">
@@ -31,9 +31,9 @@
             </div>
 
 
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="margin-right: -200px" >
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/Go startup HMSI.png"alt="">
+                <img src="assets/images/Go startup HMSI1.png"alt="">
               </div>
             </div>
           </div>
