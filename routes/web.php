@@ -38,6 +38,10 @@ Route::get('/findjob', function () {
 Route::get('/register', function () {
     return view('register');
 });
+//Skill Up
+Route::get('/skillup', function () {
+    return view('skillup');
+});
 Route::post('/save', [RegisterController::class, 'store']);
 
 Auth::routes();
