@@ -52,8 +52,9 @@
 
                         <div class="row mb-0">
 
-                                <input type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
+                                </button>
 
 
                                 @if (Route::has('password.request'))

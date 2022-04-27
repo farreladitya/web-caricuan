@@ -1,47 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- CSRF Token -->
+     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+     <title>{{ config('app.name', 'Laravel') }}</title>
+
+     <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Styles -->
     <link href="{{ asset('style.css') }}" rel="stylesheet">
-    <title>Sign in & Sign up Form</title>
   </head>
+
   <body>
+    <main class="py-4">
     <div class="container">
       <div class="forms-container">
-        <div class="signin-signup">
-          <form action="#" class="sign-in-form">
+        <div class="signin-signup ">
+
+          {{-- START SIGN IN --}}
+          <form method="POST" action="{{ route('login') }}" class="sign-in-form">
             <img src="img/cclogo1.png" class="image" alt="" style="width: 50%; margin-bottom: 10px"/>
             <h2 class="title" style="text-align: center"> Welcome to Cari.Cuan</h2>
             <h2 class="title" style="text-align: center">{{ __('Login') }}</h2>
-
-            {{-- START SIGN IN --}}
-            <form method="POST" action="{{ route('login') }}">
             @csrf
             <div class="input-field">
                 <i class="fas fa-user"></i>
                 <input type="text" placeholder="Email" id="email" type="email"  class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus/>
-                @error('email')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
             </div>
 
             <div class="input-field">
               <i class="fas fa-lock"></i>
               <input id="password" type="password" placeholder="Password" class="@error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                @error('password')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
-
             </div>
 
             <div class="row mb-3">
@@ -55,6 +53,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row mb-0">
                 <div class="col-md-8 offset-md-4">
                     <button type="submit" class="btn btn-primary">
@@ -67,6 +66,16 @@
                         </a>
                     @endif
             </div>
+            @error('email')
+            <span class="invalid-feedback" role="alert" style="color: red">
+               <strong> {{ $message }}</strong>
+            </span>
+            @enderror
+            @error('password')
+                     <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+            @enderror
             </form>
             {{-- END SIGN IN --}}
 
@@ -140,7 +149,7 @@
         </div>
       </div>
     </div>
-
+    </main>
     <script type="text/javascript" src="{{ asset('app.js') }}"></script>
-  </body>
+</body>
 </html>
