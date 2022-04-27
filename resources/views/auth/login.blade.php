@@ -80,26 +80,52 @@
             {{-- END SIGN IN --}}
 
             {{-- START SIGN UP --}}
-          <form action="/save" method="POST" class="sign-up-form">
-              @csrf
+            <form method="POST" action="{{ route('register') }}" class="sign-up-form">
+                @csrf
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Name" />
+              <input id="name" placeholder="Name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
             </div>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input id="email" placeholder="Email Address" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input id="username" placeholder="Username" type="username" class="form-control" name="username" value="{{ old('username') }}" required autocomplete="username">
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input id="password" placeholder="Password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input id="password-confirm" placeholder="Confirm Password" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Job Seeker
+                        </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="1" checked>
+                      </div>
+                </div>
+
+                    <div class="col-6">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Company
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="2">
+                          </div>
+                    </div>
+            </div>
+
+              <button type="submit" class="btn">
+                {{ __('Register') }}
+            </button>
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -115,6 +141,13 @@
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
+            {{-- Error Message --}}
+            @error('name')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+
           </form>
           {{-- END SIGN UP --}}
         </div>

@@ -15,7 +15,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <title>Chain App Dev - App Landing Page HTML5 Template</title>
+    <title>Welcome To Cari.Cuan</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
