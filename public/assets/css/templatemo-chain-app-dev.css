@@ -2276,6 +2276,6 @@ responsive
         padding: 30px;
     }
     .bg-skillup {
-        background-image: image(url(assets/images/skill-up.png));
+        background-image: image(url(assets/images/skillupfix.png));
     }
 }
