@@ -80,7 +80,7 @@
             {{-- END SIGN IN --}}
 
             {{-- START SIGN UP --}}
-            <form method="POST" action="{{ route('register') }}" class="sign-up-form">
+            <form method="POST" action="{{ route('register') }}" class="sign-up-form" enctype="multipart/form-data">
                 @csrf
             <h2 class="title">Sign up</h2>
             <div class="input-field">
@@ -102,6 +102,10 @@
             <div class="input-field">
                 <i class="fas fa-lock"></i>
                 <input id="password-confirm" placeholder="Confirm Password" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+            </div>
+            <div class="input-field">
+                <label for="formFile" class="form-label">Photo</label>
+                <input class="form-control" type="file" id="formFile">
             </div>
             <div class="row">
                 <div class="col-6">
@@ -132,13 +136,7 @@
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
                 <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
             {{-- Error Message --}}
