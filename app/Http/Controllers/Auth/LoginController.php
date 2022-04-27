@@ -42,9 +42,9 @@ class LoginController extends Controller
     protected function authenticated(Request $request, $user)
     {
         if ($user->hasRole('admin')) {
-            return redirect()->route('findjob');
+            return redirect()->route('applist');
         }
-        return redirect()->route('applist');
+        return redirect()->route('home');
 
     }
 

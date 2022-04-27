@@ -47,7 +47,7 @@ Route::post('/save', [RegisterController::class, 'store']);
 Auth::routes();
 
 Route::middleware('role:admin')->get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])->name('applist');
-Route::middleware('role:user')->get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
