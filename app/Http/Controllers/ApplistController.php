@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+
 class ApplistController extends Controller
 {
     /**
@@ -32,7 +33,7 @@ class ApplistController extends Controller
     	return view('applist',['lowongan' => $lowongan]);
 
     }
-    public function input()
+    public function tambah()
     {
 
 	// memanggil view tambah

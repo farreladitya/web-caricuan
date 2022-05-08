@@ -49,7 +49,7 @@
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
             <div class="gradient-button">
-                <a href="/applist/input"> Create</a>
+                <a href="/applist/tambah"> Create</a>
             </div>
           </div>
         </div>

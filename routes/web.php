@@ -31,7 +31,7 @@ Route::get('/pmf', function () {
 
 // Applist
 Route::get('/applist', [App\Http\Controllers\ApplistController::class, 'index']);
-Route::get('/applist/input',  [App\Http\Controllers\ApplistController::class, 'input']);
+Route::get('/applist/tambah',  [App\Http\Controllers\ApplistController::class, 'tambah']);
 Route::post('/applist/store',  [App\Http\Controllers\ApplistController::class, 'store']);
 
 Route::get('/findjob', function () {
@@ -52,6 +52,7 @@ Route::post('/save', [RegisterController::class, 'store']);
 Auth::routes();
 
 Route::middleware('role:admin')->get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])->name('applist');
+Route::middleware('role:admin')->get('/inputapplist', [App\Http\Controllers\ApplistController::class, 'tambah'])->name('inputapplist');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
