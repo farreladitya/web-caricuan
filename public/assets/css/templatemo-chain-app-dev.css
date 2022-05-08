@@ -2278,4 +2278,13 @@ responsive
     .bg-skillup {
         background-image: image(url(assets/images/skillupfix.png));
     }
+    .create-appl {
+        position: absolute;
+        width: 1161px;
+        height: 153px;
+        left: 410px;
+        top: 3097px;
+        background: linear-gradient(180deg, #2d4d83 4.92%, #93ddde 200.54%);
+        border-radius: 70px;
+    }
 }

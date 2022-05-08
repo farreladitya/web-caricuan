@@ -34,6 +34,9 @@ Route::get('/applist', function () {
 Route::get('/findjob', function () {
     return view('findjob');
 });
+Route::get('/inputapplist', function () {
+    return view('inputapplist');
+});
 // Register and Login
 Route::get('/register', function () {
     return view('register');
