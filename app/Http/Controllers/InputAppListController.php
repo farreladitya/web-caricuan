@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class InputApplistController extends Controller
 {
@@ -22,8 +23,13 @@ class InputApplistController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function inputapplist()
     {
-        return view('/applist');
+    	// mengambil data dari table pegawai
+    	$lowongan = DB::table('lowongan')->get();
+
+    	// mengirim data pegawai ke view index
+    	return view('inputapplist',['lowongan' => $lowongan]);
+
     }
 }

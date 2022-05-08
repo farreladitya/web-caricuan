@@ -28,15 +28,17 @@ Route::get('/userhome', function () {
 Route::get('/pmf', function () {
     return view('pmf');
 });
-Route::get('/applist', function () {
-    return view('applist');
-});
+
+// Applist
+Route::get('/applist', [App\Http\Controllers\ApplistController::class, 'index']);
+Route::get('/applist/input',  [App\Http\Controllers\ApplistController::class, 'input']);
+Route::post('/applist/store',  [App\Http\Controllers\ApplistController::class, 'store']);
+
 Route::get('/findjob', function () {
     return view('findjob');
 });
-Route::get('/inputapplist', function () {
-    return view('inputapplist');
-});
+Route::get('/inputapplist', 'InputApplistController@inputapplist');
+
 // Register and Login
 Route::get('/register', function () {
     return view('register');

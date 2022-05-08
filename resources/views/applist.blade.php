@@ -49,10 +49,34 @@
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
             <div class="gradient-button">
-                <a href="/inputapplist" value="TAMBAH">Create</a>
+                <a href="/applist/input"> Create</a>
             </div>
           </div>
         </div>
+        <table class="table">
+            <tr class="text-center">
+                <th>Company</th>
+                <th>Position</th>
+                <th>About</th>
+                <th>Requirement</th>
+                <th>Salary</th>
+                <th>Opsi</th>
+            </tr>
+            @foreach($lowongan as $p)
+            <tr>
+                <td>{{ $p->perusahaan }}</td>
+                <td>{{ $p->jabatan }}</td>
+                <td>{{ $p->tentang_lowongan }}</td>
+                <td>{{ $p->persyaratan }}</td>
+                <td>{{ $p->gaji }}</td>
+                <td>
+                    <a href="/applist/edit/{{ $p->id }}">Edit</a>
+                    |
+                    <a href="/applist/hapus/{{ $p->id }}">Delete</a>
+                </td>
+            </tr>
+            @endforeach
+        </table>
       </div>
     </div>
   </div>
