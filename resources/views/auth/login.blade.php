@@ -104,8 +104,8 @@
                 <input id="password-confirm" placeholder="Confirm Password" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
             </div>
             <div class="input-field">
-                <label for="formFile" class="form-label">Photo</label>
-                <input class="form-control" type="file" id="formFile">
+                <label for="image" class="form-label">Photo</label>
+                <input class="form-control" type="file" id="image" name="image">
             </div>
             <div class="row">
                 <div class="col-6">

@@ -8,13 +8,8 @@
             <div class="col-lg-6 align-self-center">
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
-<<<<<<< Updated upstream
                   <div class="col-lg-12" style="margin-left: -100px">
                     <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Dream Jobs, Top Talent.<br> All in One Place </p>
-=======
-                  <div class="col-lg-12" style="margin-left: -150px">
-                    <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 50px; color: #ffff"> Dream Jobs, Top Talent.<br> All in One Place </p>
->>>>>>> Stashed changes
                 </div>
                 </div>
 

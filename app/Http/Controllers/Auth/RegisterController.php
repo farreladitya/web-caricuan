@@ -48,6 +48,19 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+
+    public function store(Request $request)
+    {
+        return $request->file('image')->store('post-images');
+        // ddd($request);
+
+        $validatedData = $request->validate([
+        'name' => ['required', 'string', 'max:255'],
+        'username' => ['required', 'string', 'max:255', 'unique:users'],
+        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+    }
     protected function validator(array $data)
     {
         return Validator::make($data, [
