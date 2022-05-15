@@ -27,7 +27,7 @@
         </div>
         <div class="buttons">
             <button class="quit">Exit Test</button>
-            <button class="restart">Continue</button>
+            <button class="restart">Start Test</button>
         </div>
     </div>
 
