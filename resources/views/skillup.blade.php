@@ -18,30 +18,17 @@
       <div class="row">
         <div class="col-lg-3">
           <div class="service-item first-service">
-            <div class="icon"></div>
-            <h4>Know Your Skills</h4>
             <p>Plan My Future helps you to identify your interests, talents and skills that will be useful in the world of work</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item second-service">
-            <div class="icon"></div>
-            <h4>Best Psychology Questions</h4>
             <p>Plan My Future provides psychological questions that have been tested in various psychological tests in Indonesia</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item third-service">
-            <div class="icon"></div>
-            <h4>Quick Result</h4>
             <p>Plan My Future provides psychological test results in less than a week</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="service-item fourth-service">
-            <div class="icon"></div>
-            <h4>Plan Your Steps</h4>
-            <p>My Future Plan helps you to make it easier to plan your future career</p>
           </div>
         </div>
       </div>
