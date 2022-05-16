@@ -40,12 +40,15 @@
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="section-heading">
-            <h4>Skill Up <em>Course</em> </h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Reach a bright future by honing skills according to your talents and interests</p>
+            <h4>Digital
+              Entrepreneurship 
+              Academy Training</h4>
+            {{-- <img src="assets/images/heading-line-dec.png" alt=""> --}}
+            <p>Pelatihan Bimbingan Teknis Digital Entrepreneurship Academy (Offline) merupakan rangkaian program Digital Talent Scholarship yang dilaksanakan Badan Penelitian dan Pengembangan SDM Kementerian Komunikasi dan Informatika pada tahun 2020. 
+            </p>
           </div>
           <div class="row">
-            <div class="col-lg-6">
+            {{-- <div class="col-lg-6">
               <div class="box-item">
                 <h4><a href="#">With the Best Mentor</a></h4>
                 <p>Certified Mentors</p>
@@ -68,7 +71,7 @@
                 <h4><a href="#">Latest Video</a></h4>
                 <p>Everyday</p>
               </div>
-            </div>
+            </div> --}}
           </div>
         </div>
         <div class="col-lg-6">
@@ -80,6 +83,9 @@
   </div>
 
   <div class="container">
+    <div class="section-heading">
+      <h4>It's <em>Available</em> Now!</h4>
+    </div>
     <div class="row">
       <div class="col-lg-3">
         <div class="service-item first-service">
