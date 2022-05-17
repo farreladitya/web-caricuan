@@ -18,16 +18,19 @@
       <div class="row">
         <div class="col-lg-3">
           <div class="service-item first-service">
+            <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
             <p>Plan My Future helps you to identify your interests, talents and skills that will be useful in the world of work</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item second-service">
+            <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
             <p>Plan My Future provides psychological questions that have been tested in various psychological tests in Indonesia</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item third-service">
+            <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
             <p>Plan My Future provides psychological test results in less than a week</p>
           </div>
         </div>
@@ -40,6 +43,7 @@
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="section-heading">
+            <img src="assets/images/xl.png" style="width: 15%; height: 15%" alt="">
             <h4>Digital
               Entrepreneurship 
               Academy Training</h4>
@@ -89,16 +93,19 @@
     <div class="row">
       <div class="col-lg-3">
         <div class="service-item first-service">
+          <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
           <p>Plan My Future helps you to identify your interests, talents and skills that will be useful in the world of work</p>
         </div>
       </div>
       <div class="col-lg-3">
         <div class="service-item second-service">
+          <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
           <p>Plan My Future provides psychological questions that have been tested in various psychological tests in Indonesia</p>
         </div>
       </div>
       <div class="col-lg-3">
         <div class="service-item third-service">
+          <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
           <p>Plan My Future provides psychological test results in less than a week</p>
         </div>
       </div>
