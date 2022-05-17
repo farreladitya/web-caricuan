@@ -24,7 +24,8 @@
         </div>
         <div class="col-lg-3 mx-4">
           <div class="service-item second-service">
-            <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
+            <img src="{{URL::asset('/assets/images/tokopedia.png')}}" width="28%" height="28%" class="float-right">
+            {{-- <img src="assets/images/ppkd.png" style="width: 28%; height: 28%" alt=""> --}}
             <p>Plan My Future provides psychological questions that have been tested in various psychological tests in Indonesia</p>
           </div>
         </div>
@@ -45,7 +46,7 @@
           <div class="section-heading">
             <div class="row">
               <div class="col-2 my-auto">
-                <img src="assets/images/xl.png" style="width: 65px; height: 65px" alt="">
+                <img src="assets/images/tokopedia.png" style="width: 65px; height: 65px" alt="">
               </div>
               <div class="col-6">
                 <span class="fw-bold" style="font-size: 25px">Digital
