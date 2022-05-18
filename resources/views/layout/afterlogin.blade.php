@@ -19,9 +19,10 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="{{asset('assets/css/templatemo-chain-app-dev.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/animated.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/owl.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/styleapplist.css')}}">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
         </style>
@@ -50,7 +51,7 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="col-2">
-              <img src="img/cclogo1.png" style="margin-top: 10px; width: 15%">
+              <img src="{{asset("img/cclogo1.png")}}" style="margin-top: 10px; width: 15%">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -108,8 +109,7 @@
 {{-- startcontent --}}
             @yield('content')
 {{-- endcontent --}}
-
-
+</body>
   <footer id="newsletter">
     <div class="container">
       <div class="row">
@@ -152,16 +152,16 @@
 
 
   <!-- Scripts -->
-  <script src="jquery/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="{{asset("jquery/jquery.min.js")}}"></script>
+  <script src="{{asset("bootstrap/js/bootstrap.bundle.min.js")}}"></script>
+  <script src="{{asset("assets/js/owl-carousel.js")}}"></script>
+  <script src="{{asset("assets/js/animation.js")}}"></script>
+  <script src="{{asset("assets/js/imagesloaded.js")}}"></script>
+  <script src="{{asset("assets/js/popup.js")}}"></script>
+  <script src="{{asset("assets/js/custom.js")}}"></script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+
 </html>

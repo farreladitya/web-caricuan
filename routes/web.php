@@ -53,6 +53,7 @@ Auth::routes();
 
 Route::middleware('role:admin')->get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])->name('applist');
 Route::middleware('role:admin')->get('/inputapplist', [App\Http\Controllers\ApplistController::class, 'tambah'])->name('inputapplist');
+Route::middleware('role:admin')->get('/applist/detail', [App\Http\Controllers\ApplistController::class, 'detail'])->name('detailapplist');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();

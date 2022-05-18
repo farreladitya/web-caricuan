@@ -43,29 +43,43 @@
     </div>
   </div>
 
-  <div id="services" class="services section">
+  <div id="content" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="gradient-button">
-                <a href="/applist/tambah"> Create</a>
+      <div class="row" >
+            <div class="gradient-button mt-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
+                <a href="/applist/tambah"> Create new job vacancy</a>
             </div>
-          </div>
+            <div class="row wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
+                <div class="grey-box">
+                @foreach($lowongan as $p)
+                <div class="job-name">
+                    {{ $p->jabatan }}, {{ $p->perusahaan }}
+                </div>
+                <div class="job-location">
+                    {{ $p->lokasi }}
+                </div>
+
+                @endforeach
+                <a href="/applist/detail" class="viewapp-btn viewapp-text">View Applicant</a>
+            </div>
         </div>
-        <table class="table">
+
+
+        {{-- <table class="table">
             <tr class="text-center">
                 <th>Company</th>
                 <th>Position</th>
+                <th>Location</th>
                 <th>About</th>
                 <th>Requirement</th>
                 <th>Salary</th>
                 <th>Opsi</th>
             </tr>
-            @foreach($lowongan as $p)
+
             <tr>
                 <td>{{ $p->perusahaan }}</td>
                 <td>{{ $p->jabatan }}</td>
+                <td>{{ $p->lokasi }}</td>
                 <td>{{ $p->tentang_lowongan }}</td>
                 <td>{{ $p->persyaratan }}</td>
                 <td>{{ $p->gaji }}</td>
@@ -75,8 +89,8 @@
                     <a href="/applist/hapus/{{ $p->id }}">Delete</a>
                 </td>
             </tr>
-            @endforeach
-        </table>
+
+        </table> --}}
       </div>
     </div>
   </div>

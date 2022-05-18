@@ -47,12 +47,20 @@ class ApplistController extends Controller
         DB::table('lowongan')->insert([
             'perusahaan' => $request->perusahaan,
             'jabatan' => $request->jabatan,
+            'lokasi' => $request->lokasi,
             'tentang_lowongan' => $request->tentang_lowongan,
             'persyaratan' => $request->persyaratan,
             'gaji' => $request->gaji
         ]);
         // alihkan halaman ke halaman pegawai
         return redirect('/applist');
+
+    }
+    public function detail()
+    {
+
+	// memanggil view tambah
+	return view('detailapplist');
 
     }
 }

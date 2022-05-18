@@ -380,7 +380,7 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-    color: #4b8ef1;
+    color: #fff;
 }
 
 .background-header .nav li a.active {
@@ -502,7 +502,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-    color: #4b8ef1 !important;
+    color: #fff !important;
 }
 
 .header-area .main-nav .nav li:last-child a.active {
@@ -574,7 +574,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
     background: #fff;
-    color: #4b8ef1 !important;
+    color: #fff !important;
     padding-left: 25px;
 }
 

@@ -9,7 +9,7 @@
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12" style="margin-left: -100px">
-                    <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Dream Jobs, Top Talent.<br> All in One Place </p>
+                    <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Masukkan Lowongan</p>
                 </div>
                 </div>
 
@@ -34,7 +34,7 @@
 
             <div class="col-lg-6" style="margin-right: -200px" >
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/Go startup HMSI1.png"alt="">
+                <img src="{{asset("assets/images/Go startup HMSI1.png")}}" alt="">
               </div>
             </div>
           </div>
@@ -48,28 +48,53 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="gradient-button">
-                <a href="/applist/input"> Create</a>
+            <h2>Lowongan</h2>
+            <div class="gradient-button mt-3">
+                <a href="/applist">Kembali</a>
             </div>
           </div>
         </div>
-        <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-	<h3>Data Pegawai</h3>
+      </div>
+      <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8 justify-content-center">
+            <form action="/applist/store" method="post">
+                {{ csrf_field() }}
+                <div class="form-group">
+                    <label for="name">Company</label>
+                    <input type="text" class="form-control" id="perusahaan" name="perusahaan" placeholder="Company" required>
+                  </div>
+                <div class="form-group">
+                    <label for="jabatan">Position</label>
+                    <input type="text" class="form-control" id="jabatan" name="jabatan" aria-describedby="emailHelp" placeholder="Position" required>
+                  </div>
+                <div class="form-group">
+                    <label for="lokasi">Location</label>
+                    <input type="text" class="form-control" id="lokasi" name="lokasi" aria-describedby="emailHelp" placeholder="Location" required>
+                  </div>
+                <div class="form-group">
+                    <label for="gaji">Salary</label>
+                    <input type="text" class="form-control" id="gaji" name="gaji" aria-describedby="emailHelp" placeholder="Salary" required>
+                  </div>
+                <div class="form-group">
+                    <label for="tentang_lowongan">About</label>
+                    <input type="text" class="form-control" id="tentang_lowongan" name="tentang_lowongan" aria-describedby="emailHelp" placeholder="About" required>
+                  </div>
+                <div class="form-group">
+                    <label for="persyaratan">Requirements</label>
+                    <input type="text" class="form-control" id="persyaratan" name="persyaratan" aria-describedby="emailHelp" placeholder="Requirements" required>
+                  </div>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-6">
+                    <button type="submit" class="btn btn-primary">Simpan Data</button>
+                    </form>
+                    </div>
 
-	<a href="/applist"> Kembali</a>
+                </div>
+          </div>
+          <div class="col-2"></div>
 
-	<br/>
-	<br/>
-
-	<form action="/applist/store" method="post">
-		{{ csrf_field() }}
-		Nama <input type="text" name="perusahaan" required="required"> <br/>
-		Jabatan <input type="text" name="jabatan" required="required"> <br/>
-		Umur <input type="number" name="gaji" required="required"> <br/>
-		Alamat <textarea name="tentang_lowongan" required="required"></textarea> <br/>
-		Alamat <textarea name="persyaratan" required="required"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
-	</form>
       </div>
     </div>
   </div>
