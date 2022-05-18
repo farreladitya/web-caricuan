@@ -19,20 +19,29 @@
         <div class="col-lg-3 mx-4">
           <div class="service-item first-service">
             <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
-            <p>Plan My Future helps you to identify your interests, talents and skills that will be useful in the world of work</p>
+            <p>Topic:
+              <br>
+              Improving Our Public Speaking <br> Organizer: <br> PPKD Jakarta Pusat <br> Speakers: <br> Sunyoto Wirawan, S.T., M.T
+            </p>
           </div>
         </div>
         <div class="col-lg-3 mx-4">
           <div class="service-item second-service">
-            <img src="{{URL::asset('/assets/images/tokopedia.png')}}" width="28%" height="28%" class="float-right">
-            {{-- <img src="assets/images/ppkd.png" style="width: 28%; height: 28%" alt=""> --}}
-            <p>Plan My Future provides psychological questions that have been tested in various psychological tests in Indonesia</p>
+            {{-- <img src="{{URL::asset('/assets/images/xl.png')}}" width="28%" height="28%" class="float-right"> --}}
+            <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
+            <p>Topic:
+              <br>
+              Improving Jurnalism Skills <br> Organizer: <br> Brawijaya University <br> Speakers: <br>Sanjaya Oktaviano, S.I.Kom.
+            </p>
           </div>
         </div>
         <div class="col-lg-3 mx-4">
           <div class="service-item third-service">
             <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
-            <p>Plan My Future provides psychological test results in less than a week</p>
+            <p>Topic:
+              <br>
+              Optimization of Communication Skills <br> Organizer: <br> Karier.mu <br> Speakers: <br>Stephanus Avata, S.I.Kom.
+            </p>         
           </div>
         </div>
       </div>
@@ -94,28 +103,36 @@
   </div>
 
   <div class="container">
-    <div class="section-heading">
-      <h4 class="text-center my-5">It's <em>Available</em> Now!</h4>
-    </div>
     <div class="row d-flex justify-content-center">
       <div class="col-lg-3 mx-4">
         <div class="service-item first-service">
           <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
-          <p>Plan My Future helps you to identify your interests, talents and skills that will be useful in the world of work</p>
+          <p>Topic:
+            <br>
+            Effective Report Writing for Internal Audit <br> Organizer: <br> PPIA <br> Speakers: <br>Dr. Ir. Mudjahidin, S.T., M.T
+          </p>
         </div>
       </div>
       <div class="col-lg-3 mx-4">
         <div class="service-item second-service">
+          {{-- <img src="{{URL::asset('/assets/images/xl.png')}}" width="28%" height="28%" class="float-right"> --}}
           <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
-          <p>Plan My Future provides psychological questions that have been tested in various psychological tests in Indonesia</p>
+          <p>Topic:
+            <br>
+            Learning and Teaching In Pandemi Era <br> Organizer: <br> Whiteboard Education<br> Speakers: <br>Eric Kunto Ariwibowo, M.Pd
+          </p>
         </div>
       </div>
       <div class="col-lg-3 mx-4">
         <div class="service-item third-service">
           <img src="assets/images/xl.png" style="width: 28%; height: 28%" alt="">
-          <p>Plan My Future provides psychological test results in less than a week</p>
+          <p>Topic:
+            <br>
+            Improving Your Excel Skills<br> Organizer: <br> Karier.mu <br> Speakers: <br>Alexander Amando Tanoesoedibjo
+          </p>         
         </div>
       </div>
     </div>
   </div>
+</div>
 @endsection
