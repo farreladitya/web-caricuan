@@ -1,5 +1,12 @@
 @extends('layout.afterlogin')
 
+@section('navbar')
+              <li class="scroll-to-section"><a href="/home" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="/applist" >Applicant List</a></li>
+              <li class="scroll-to-section"><a href="#about">Skill Up</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Find Job</a></li>
+@endsection
+
 @section('content')
 <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">

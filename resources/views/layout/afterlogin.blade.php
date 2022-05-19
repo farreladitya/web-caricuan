@@ -26,6 +26,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
         </style>
+
+    <script src=
+    "https://code.jquery.com/jquery-3.4.1.min.js">
+        </script>
   </head>
 
 <body>
@@ -56,10 +60,7 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#services">Plan My Future</a></li>
-              <li class="scroll-to-section"><a href="#about">Skill Up</a></li>
-              <li class="scroll-to-section"><a href="#pricing">Find Job</a></li>
+                @yield('navbar')
               <li><div class="gradient-button"><a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>Hi
                <!-- @if(Auth::check()) -->
                {{ Auth::user()->name }}
@@ -159,6 +160,8 @@
   <script src="{{asset("assets/js/imagesloaded.js")}}"></script>
   <script src="{{asset("assets/js/popup.js")}}"></script>
   <script src="{{asset("assets/js/custom.js")}}"></script>
+
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

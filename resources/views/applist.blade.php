@@ -1,4 +1,12 @@
 @extends('layout.afterlogin')
+
+
+@section('navbar')
+              <li class="scroll-to-section"><a href="/home">Home</a></li>
+              <li class="scroll-to-section"><a href="/applist" class="active">Applicant List</a></li>
+              <li class="scroll-to-section"><a href="#about">Skill Up</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Find Job</a></li>
+@endsection
 @section('content')
 <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
@@ -34,7 +42,7 @@
 
             <div class="col-lg-6" style="margin-right: -200px" >
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/Go startup HMSI1.png"alt="">
+                <img src="{{asset("assets/images/Go startup HMSI1.png")}}" alt="">
               </div>
             </div>
           </div>
@@ -49,19 +57,28 @@
             <div class="gradient-button mt-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
                 <a href="/applist/tambah"> Create new job vacancy</a>
             </div>
+      </div>
             <div class="row wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
-                <div class="grey-box">
                 @foreach($lowongan as $p)
+                <div class="grey-box mb-3">
+                <div class="col-9">
+                <div class="row">
                 <div class="job-name">
                     {{ $p->jabatan }}, {{ $p->perusahaan }}
                 </div>
+            </div>
+            <div class="row">
                 <div class="job-location">
                     {{ $p->lokasi }}
                 </div>
-
-                @endforeach
-                <a href="/applist/detail" class="viewapp-btn viewapp-text">View Applicant</a>
             </div>
+            </div>
+            <div class="col-3">
+                <a href="/applist/detail/{{ $p->id }}" class="detail-btn detail-text">Detail</a>
+                <a href="/applist/view" class="viewapp-btn viewapp-text">View Applicant</a>
+            </div>
+            </div>
+            @endforeach
         </div>
 
 

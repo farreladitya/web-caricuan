@@ -257,6 +257,18 @@ body {
     font-style: normal;
     color: #4b8ef1;
 }
+.section-heading h1 {
+    color: #2a2a2a;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-heading h1 em {
+    font-style: normal;
+    color: #4b8ef1;
+}
 
 .section-heading img {
     width: 45px;
@@ -380,7 +392,7 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-    color: #fff;
+    color: #4b8ef1;
 }
 
 .background-header .nav li a.active {
@@ -502,7 +514,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-    color: #fff !important;
+    color: #4b8ef1 !important;
 }
 
 .header-area .main-nav .nav li:last-child a.active {
@@ -574,7 +586,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
     background: #fff;
-    color: #fff !important;
+    color: #4b8ef1 !important;
     padding-left: 25px;
 }
 

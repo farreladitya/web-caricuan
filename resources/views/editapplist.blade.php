@@ -66,37 +66,40 @@
       <div class="row">
           <div class="col-2"></div>
           <div class="col-8 justify-content-center">
-            <form action="/applist/store" method="post">
+              @foreach ($lowongan as $p )
+            <form action="/applist/update" method="post">
                 {{ csrf_field() }}
+                <input type="hidden" name="id" value="{{ $p->id }}"> <br/>
                 <div class="form-group">
                     <label for="name">Company</label>
-                    <input type="text" class="form-control" id="perusahaan" name="perusahaan" placeholder="Company" required>
+                    <input type="text" class="form-control" id="perusahaan" name="perusahaan" placeholder="Company" value="{{ $p->perusahaan }}" required>
                   </div>
                 <div class="form-group">
                     <label for="jabatan">Position</label>
-                    <input type="text" class="form-control" id="jabatan" name="jabatan" aria-describedby="emailHelp" placeholder="Position" required>
+                    <input type="text" class="form-control" id="jabatan" name="jabatan" aria-describedby="emailHelp" placeholder="Position" value="{{ $p->jabatan }}" required>
                   </div>
                 <div class="form-group">
                     <label for="lokasi">Location</label>
-                    <input type="text" class="form-control" id="lokasi" name="lokasi" aria-describedby="emailHelp" placeholder="Location" required>
+                    <input type="text" class="form-control" id="lokasi" name="lokasi" aria-describedby="emailHelp" placeholder="Location" value="{{ $p->lokasi }}" required>
                   </div>
                 <div class="form-group">
                     <label for="gaji">Salary</label>
-                    <input type="text" class="form-control" id="gaji" name="gaji" aria-describedby="emailHelp" placeholder="Salary" required>
+                    <input type="text" class="form-control" id="gaji" name="gaji" aria-describedby="emailHelp" placeholder="Salary" value="{{ $p->gaji }}" required>
                   </div>
                 <div class="form-group">
                     <label for="tentang_lowongan">About</label>
-                    <textarea id="autoresizing" type="text" class="form-control" id="tentang_lowongan" name="tentang_lowongan" aria-describedby="emailHelp" placeholder="About" required></textarea>
+                    <textarea id="autoresizing" type="text" class="form-control" id="tentang_lowongan" name="tentang_lowongan" aria-describedby="emailHelp" placeholder="About" value="{{ $p->tentang_lowongan }}" required></textarea>
                   </div>
                 <div class="form-group">
                     <label for="persyaratan">Requirements</label>
-                    <textarea id="autoresizing" type="text" class="form-control" id="persyaratan" name="persyaratan" aria-describedby="emailHelp" placeholder="Requirements" required></textarea>
+                    <textarea id="autoresizing" type="text" class="form-control" id="persyaratan" name="persyaratan" aria-describedby="emailHelp" placeholder="Requirements" value="{{ $p->persyaratan }}" required></textarea>
                   </div>
                 <div class="row">
                     <div class="col-4"></div>
                     <div class="col-6">
                     <button type="submit" class="btn btn-primary">Simpan Data</button>
                     </form>
+                    @endforeach
                     </div>
 
                 </div>

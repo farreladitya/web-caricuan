@@ -6,10 +6,8 @@
 .grey-box {
     /* Rectangle 378 */
 
-    position: absolute;
     width: 1120px;
     height: 130px;
-    margin-bottom: 100px;
     /* left: 95px; */
 
     background: #f3f2f2;
@@ -38,8 +36,6 @@
     /* Jakarta */
 
     position: absolute;
-    width: 204px;
-    height: 37px;
     left: 37px;
     top: 60px;
 
@@ -47,7 +43,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    line-height: 37px;
+    /* line-height: 37px; */
     /* identical to box height, or 74% */
 
     color: rgba(97, 153, 181, 0.74);
@@ -80,4 +76,81 @@
     text-align: center;
     color: #ffffff;
     justify-content: center;
+}
+.detail-btn {
+    /* Rectangle 383 */
+
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    left: 780px;
+    top: 30px;
+    background: linear-gradient(180deg, #2d4d83 4.92%, #93ddde 200.54%);
+    border-radius: 70px;
+}
+
+.detail-btn:hover {
+    color: #fff;
+}
+
+.detail-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 37px;
+    /* or 123% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    justify-content: center;
+}
+.int-detail {
+    /* UX (User Experience) Researcher */
+
+    position: absolute;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 37px;
+    margin-top: 40px;
+    left: 37px;
+    /* identical to box height, or 74% */
+
+    color: #434175;
+}
+.edit-btn {
+    /* Rectangle 383 */
+
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    left: 400px;
+    top: 30px;
+    background: rgb(235, 219, 0);
+    border-radius: 70px;
+}
+.delete-btn {
+    /* Rectangle 383 */
+
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    left: 570px;
+    top: 30px;
+    background: rgb(235, 0, 0);
+    border-radius: 70px;
+}
+.edit-btn:hover {
+    color: #fff;
+}
+.delete-btn:hover {
+    color: #fff;
+}
+#autoresizing {
+    display: block;
+    overflow: hidden;
+    resize: none;
 }
