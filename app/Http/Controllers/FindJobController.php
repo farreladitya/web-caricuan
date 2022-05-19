@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class FindJobController extends Controller
 {
@@ -24,6 +26,13 @@ class FindJobController extends Controller
      */
     public function index()
     {
-        return view('findjob');
+    	// mengambil data dari table pegawai
+    	$lowongan = DB::table('lowongan')->get();
+
+    	// mengirim data pegawai ke view index
+    	return view('findjob',['lowongan' => $lowongan]);
+
     }
+
+
 }

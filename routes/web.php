@@ -34,9 +34,8 @@ Route::get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])
 Route::get('/applist/tambah',  [App\Http\Controllers\ApplistController::class, 'tambah']);
 Route::post('/applist/store',  [App\Http\Controllers\ApplistController::class, 'store']);
 
-Route::get('/findjob', function () {
-    return view('findjob');
-});
+
+Route::get('/findjob', [App\Http\Controllers\FindJobController::class, 'index']);
 Route::get('/inputapplist', 'InputApplistController@inputapplist');
 
 // Register and Login
@@ -51,6 +50,7 @@ Route::post('/save', [RegisterController::class, 'store']);
 
 Auth::routes();
 
+Route::middleware('role:admin')->get('/findjob', [App\Http\Controllers\FindJobController::class, 'index'])->name('findjob');
 Route::middleware('role:admin')->get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])->name('applist');
 Route::middleware('role:admin')->get('/inputapplist', [App\Http\Controllers\ApplistController::class, 'tambah'])->name('inputapplist');
 Route::middleware('role:admin')->get('/applist/detail/{id}', [App\Http\Controllers\ApplistController::class, 'detail'])->name('detailapplist');

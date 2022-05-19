@@ -74,14 +74,14 @@
                     <label for="name">Company</label>
                     <input type="text" class="form-control" id="perusahaan" name="perusahaan" placeholder="Company" value="{{ $p->perusahaan }}" required>
                   </div>
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for="jabatan">Position</label>
                     <input type="text" class="form-control" id="jabatan" name="jabatan" aria-describedby="emailHelp" placeholder="Position" value="{{ $p->jabatan }}" required>
                   </div>
                 <div class="form-group">
                     <label for="lokasi">Location</label>
                     <input type="text" class="form-control" id="lokasi" name="lokasi" aria-describedby="emailHelp" placeholder="Location" value="{{ $p->lokasi }}" required>
-                  </div>
+                  </div> --}}
                 <div class="form-group">
                     <label for="gaji">Salary</label>
                     <input type="text" class="form-control" id="gaji" name="gaji" aria-describedby="emailHelp" placeholder="Salary" value="{{ $p->gaji }}" required>
