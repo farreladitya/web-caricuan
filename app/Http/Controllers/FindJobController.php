@@ -34,5 +34,14 @@ class FindJobController extends Controller
 
     }
 
+    public function detail($id)
+    {
+    // mengambil data pegawai berdasarkan id yang dipilih
+    $lowongan = DB::table('lowongan')->where('id',$id)->get();
+    // passing data pegawai yang didapat ke view edit.blade.php
+    return view('detailfindjob',['lowongan' => $lowongan]);
+
+    }
+
 
 }

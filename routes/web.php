@@ -50,7 +50,8 @@ Route::post('/save', [RegisterController::class, 'store']);
 
 Auth::routes();
 
-Route::middleware('role:admin')->get('/findjob', [App\Http\Controllers\FindJobController::class, 'index'])->name('findjob');
+Route::get('/findjob', [App\Http\Controllers\FindJobController::class, 'index'])->name('findjob');
+Route::get('/findjob/detail/{id}', [App\Http\Controllers\FindJobController::class, 'detail'])->name('detailfindjob');
 Route::middleware('role:admin')->get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])->name('applist');
 Route::middleware('role:admin')->get('/inputapplist', [App\Http\Controllers\ApplistController::class, 'tambah'])->name('inputapplist');
 Route::middleware('role:admin')->get('/applist/detail/{id}', [App\Http\Controllers\ApplistController::class, 'detail'])->name('detailapplist');

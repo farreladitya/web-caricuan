@@ -339,6 +339,25 @@ body {
     transition: all 0.5s;
 }
 
+.apply-button a {
+    display: inline-block !important;
+    padding: 15px 40px !important;
+    color: #fff !important;
+    text-transform: capitalize;
+    font-size: 25px;
+    background: rgb(44, 75, 130);
+    background: linear-gradient(
+        176deg,
+        rgba(44, 75, 130, 1) 51%,
+        rgba(147, 221, 222, 1) 100%
+    );
+    border-radius: 40px;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px !important;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
 .gradient-button a:hover {
     color: #fff !important;
     background: rgb(19, 175, 240);
