@@ -3,7 +3,7 @@ let questions = [
     {
         numb: 1,
         question: "Choose between these 2 options that best reflect you",
-        answer: "Hyper Text Markup Language",
+        answer: "I tend to be more careful",
         options: [
             "I tend to be more careful",
             "I'm more inclined to follow the heart",
@@ -12,7 +12,7 @@ let questions = [
     {
         numb: 2,
         question: "Choose between these 2 options that best reflect you",
-        answer: "Cascading Style Sheet",
+        answer: "Make breakthroughs and efficient jumps",
         options: [
             "Make breakthroughs and efficient jumps",
             "Do something gradually according to the instructions",
@@ -21,7 +21,7 @@ let questions = [
     {
         numb: 3,
         question: "Choose between these 2 options that best reflect you",
-        answer: "Hypertext Preprocessor",
+        answer: "In the discussion must be logical and reasonable",
         options: [
             "When discussing it is very important to pay attention to the feelings of others",
             "In the discussion must be logical and reasonable",
@@ -30,7 +30,7 @@ let questions = [
     {
         numb: 4,
         question: "Choose between these 2 options that best reflect you",
-        answer: "Structured Query Language",
+        answer: "Provide freedom and flexibility as long as the goal is achieved",
         options: [
             "Provide freedom and flexibility as long as the goal is achieved",
             "Enforce rules and regulations so that goals are achieved",
@@ -39,7 +39,7 @@ let questions = [
     {
         numb: 5,
         question: "Choose between these 2 options that best reflect you",
-        answer: "eXtensible Markup Language",
+        answer: "Directly express what you think to others",
         options: [
             "Think again and consider before speaking",
             "Directly express what you think to others",
@@ -48,7 +48,7 @@ let questions = [
     {
         numb: 6,
         question: "Choose between these 2 options that best reflect you",
-        answer: "eXtensible Markup Language",
+        answer: "I prefer to do more than one job at a time",
         options: [
             "I prefer to do more than one job at a time",
             "I prefer to finish one job to completion",
@@ -57,7 +57,7 @@ let questions = [
     {
         numb: 7,
         question: "Choose between these 2 options that best reflect you",
-        answer: "eXtensible Markup Language",
+        answer: "I tend to be gentle and sensitive",
         options: [
             "I tend to be firm and straightforward",
             "I tend to be gentle and sensitive",
@@ -66,7 +66,7 @@ let questions = [
     {
         numb: 8,
         question: "Choose between these 2 options that best reflect you",
-        answer: "eXtensible Markup Language",
+        answer: "Happy to follow the instructions",
         options: [
             "Happy to follow the instructions",
             "Not happy to follow the instructions (improvise)",
@@ -75,7 +75,7 @@ let questions = [
     {
         numb: 9,
         question: "Choose between these 2 options that best reflect you",
-        answer: "eXtensible Markup Language",
+        answer: "Take imagination and contemplation as a guide",
         options: [
             "Take experience as a guide",
             "Take imagination and contemplation as a guide",
@@ -84,7 +84,7 @@ let questions = [
     {
         numb: 10,
         question: "Choose between these 2 options that best reflect you",
-        answer: "eXtensible Markup Language",
+        answer: "Prefer to communicate through the media, without face-to-face",
         options: [
             "Prefer to communicate face to face directly",
             "Prefer to communicate through the media, without face-to-face",
