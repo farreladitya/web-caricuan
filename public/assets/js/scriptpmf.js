@@ -124,8 +124,8 @@ function showQuetions(index) {
     }
 }
 // creating the new div tags which for icons
-let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
-let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
+let tickIconTag = '<div class="icon tick"></i></div>';
+let crossIconTag = '<div class="icon cross"></i></div>';
 
 //if user clicked on option
 function optionSelected(answer) {
@@ -174,7 +174,7 @@ function showResult() {
         // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag =
-            "<span> Your personallity match with IT Job <p>" 
+            "<span> Your personallity match with IT Job <p>"
             // userScore +
             // "</p> out of <p>" +
             // questions.length +
@@ -183,7 +183,7 @@ function showResult() {
     } else if (userScore > 5) {
         // if user scored more than 1
         let scoreTag =
-            "<span> Your personallity match with Management Job <p>" 
+            "<span> Your personallity match with Management Job <p>"
             // userScore +
             // "</p> out of <p>" +
             // questions.length +
@@ -192,7 +192,7 @@ function showResult() {
     } else {
         // if user scored less than 1
         let scoreTag =
-            "<span> Your personallity match with Arts Job <p>" 
+            "<span> Your personallity match with Arts Job <p>"
             // userScore +
             // "</p> out of <p>" +
             // questions.length +
