@@ -55,7 +55,7 @@
    <div class="container">
       
             <div class="row wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
-                <div class="grey-box mb-3 mt-5">
+                <div class="grey-box mb-5 mt-5">
                 <div class="col-9">
                 <div class="row">
                   @foreach($lowongan as $p)
