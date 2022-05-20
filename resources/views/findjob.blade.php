@@ -58,20 +58,20 @@
                 <div class="grey-box mb-3 mt-5">
                 <div class="col-9">
                 <div class="row">
-                  @foreach($lowongan as $p ??'')
+                  @foreach($lowongan as $p)
                 <div class="job-name">
-                    {{ $p ?? ''->jabatan }}, {{ $p ?? ''->perusahaan }}
+                    {{ $p ->jabatan }}, {{ $p ->perusahaan }}
                 </div>
             </div>
             <div class="row">
                 <div class="job-location">
-                    {{ $p ?? ''->lokasi }}
+                    {{ $p ->lokasi }}
                 </div>
                 @endforeach
             </div>
             </div>
             <div class="col-3">
-                <a href="/findjob/detail/{{ $p ?? ''->id }}" class="detail-btn detail-text">Detail</a>
+                <a href="/findjob/detail/{{ $p ->id }}" class="detail-btn detail-text">Detail</a>
                 
             </div>
             </div>
@@ -90,12 +90,12 @@
             </tr>
 
             <tr>
-                <td>{{ $p ?? ''->perusahaan }}</td>
-                <td>{{ $p ?? ''->jabatan }}</td>
-                <td>{{ $p ?? ''->lokasi }}</td>
-                <td>{{ $p ?? ''->tentang_lowongan }}</td>
-                <td>{{ $p ?? ''->persyaratan }}</td>
-                <td>{{ $p ?? ''->gaji }}</td>
+                <td>{{ $p ->perusahaan }}</td>
+                <td>{{ $p ->jabatan }}</td>
+                <td>{{ $p ->lokasi }}</td>
+                <td>{{ $p ->tentang_lowongan }}</td>
+                <td>{{ $p ->persyaratan }}</td>
+                <td>{{ $p ->gaji }}</td>
                 <td>
                     <a href="/applist/edit/{{ $p ?? ''->id }}">Edit</a>
                     |
