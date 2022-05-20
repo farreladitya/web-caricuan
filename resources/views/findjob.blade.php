@@ -71,7 +71,7 @@
             </div>
             </div>
             <div class="col-3">
-                <a href="/findjob/detail/{{ $p ->id }}" class="detail-btn detail-text">Detail</a>
+                <a href="/findjob/detail/{{ $p ->id }}" class="detailfj-btn detail-text">Detail</a>
                 
             </div>
             </div>
