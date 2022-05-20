@@ -64,7 +64,7 @@
         <div class="icon">
             <i class="fas fa-crown"></i>
         </div>
-        <div class="complete_text">You've completed the Test!</div>
+        <!-- <div class="complete_text">Your personallity match with IT Job</div> -->
         <div class="score_text">
             <!-- Here I've inserted Score Result from JavaScript -->
         </div>

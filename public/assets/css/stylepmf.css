@@ -14,7 +14,7 @@ body {
     background-size: 1550px;
 }
 
-::selection {
+:selection {
     color: #fff;
     background: #007bff;
 }
@@ -216,7 +216,7 @@ section .option_list .option:hover {
     border: 1px solid #b8daff;
 }
 
-section .option_list .option.correct {
+/* section .option_list .option.correct {
     color: #155724;
     background: #d4edda;
     border: 1px solid #c3e6cb;
@@ -226,7 +226,7 @@ section .option_list .option.incorrect {
     color: #721c24;
     background: #f8d7da;
     border: 1px solid #f5c6cb;
-}
+} */
 
 section .option_list .option.disabled {
     pointer-events: none;
@@ -243,7 +243,7 @@ section .option_list .option .icon {
     transition: all 0.3s ease;
     line-height: 24px;
 }
-.option_list .option .icon.tick {
+/* .option_list .option .icon.tick {
     color: #23903c;
     border-color: #23903c;
     background: #d4edda;
@@ -253,7 +253,7 @@ section .option_list .option .icon {
     color: #a42834;
     background: #f8d7da;
     border-color: #a42834;
-}
+} */
 
 footer {
     height: 60px;
