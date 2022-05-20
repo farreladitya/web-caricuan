@@ -47,8 +47,8 @@
             <div class="row">
                 <div class="form-group">
                     <div class="grey-box mt-5">
-                        <a href="/applist/edit/{{ $p->id }}"class="button edit-btn viewapp-text">Edit</a>
-                        <a href="/applist/hapus/{{ $p->id }}"class="button delete-btn viewapp-text">Delete</a>
+                        <a href="/applist/edit/{{ $p->id }}"class="edit-btn viewapp-text">Edit</a>
+                        <a href="/applist/hapus/{{ $p->id }}"class="delete-btn viewapp-text">Delete</a>
                     </div>
                       </div>
                 </form>
