@@ -69,13 +69,14 @@
             <!-- Here I've inserted Score Result from JavaScript -->
         </div>
         <div class="buttons">
-            <button class="restart">Replay Test</button>
-            <button class="quit">Quit Test</button>
+            {{-- <button class="restart">Replay Test</button>
+            <button class="quit">Quit Test</button> --}}
+            {{-- <a href="/home">Continue</a> --}}
         </div>
     </div>
 
     <!-- Inside this JavaScript file I've inserted Questions and Options only -->
-    <script src="assets/js/question.js"></script>
+     <script src="assets/js/question.js"></script>
 
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="assets/js/scriptpmf.js"></script>

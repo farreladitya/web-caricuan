@@ -35,7 +35,6 @@ class ApplistController extends Controller
     }
     public function tambah()
     {
-
 	// memanggil view tambah
 	return view('inputapplist');
 

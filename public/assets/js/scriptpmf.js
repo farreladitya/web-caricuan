@@ -15,10 +15,10 @@ start_btn.onclick = () => {
     info_box.classList.add("activeInfo"); //show info box
 };
 
-// if exitQuiz button clicked
-exit_btn.onclick = () => {
-    info_box.classList.remove("activeInfo"); //hide info box
-};
+// // if exitQuiz button clicked
+// exit_btn.onclick = () => {
+//     info_box.classList.remove("activeInfo"); //hide info box
+// };
 
 // if continueQuiz button clicked
 continue_btn.onclick = () => {
@@ -38,8 +38,8 @@ let counter;
 let counterLine;
 let widthValue = 0;
 
-const restart_quiz = result_box.querySelector(".buttons .restart");
-const quit_quiz = result_box.querySelector(".buttons .quit");
+// const restart_quiz = result_box.querySelector(".buttons .restart");
+// const quit_quiz = result_box.querySelector(".buttons .quit");
 
 // if restartQuiz button clicked
 restart_quiz.onclick = () => {
@@ -60,10 +60,10 @@ restart_quiz.onclick = () => {
     next_btn.classList.remove("show"); //hide the next button
 };
 
-// if quitQuiz button clicked
-quit_quiz.onclick = () => {
-    window.location.reload(); //reload the current window
-};
+// // if quitQuiz button clicked
+// quit_quiz.onclick = () => {
+//     window.location.reload(); //reload the current window
+// };
 
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
@@ -107,12 +107,12 @@ function showQuetions(index) {
         '<div class="option"><span>' +
         questions[index].options[1] +
         "</span></div>";
-        // '<div class="option"><span>' +
-        // questions[index].options[2] +
-        // "</span></div>" +
-        // '<div class="option"><span>' +
-        // questions[index].options[3] +
-        // "</span></div>";
+    // '<div class="option"><span>' +
+    // questions[index].options[2] +
+    // "</span></div>" +
+    // '<div class="option"><span>' +
+    // questions[index].options[3] +
+    // "</span></div>";
     que_text.innerHTML = que_tag; //adding new span tag inside que_tag
     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
 
@@ -134,6 +134,7 @@ function optionSelected(answer) {
     let userAns = answer.textContent; //getting user selected option
     let correcAns = questions[que_count].answer; //getting correct answer from array
     const allOptions = option_list.children.length; //getting all option items
+    answer.classList.add("correct"); //adding class to selected option
 
     if (userAns == correcAns) {
         //if user selected option is equal to array's correct answer
@@ -173,30 +174,27 @@ function showResult() {
     if (userScore > 8) {
         // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag =
-            "<span> Your personallity match with IT Job <p>"
-            // userScore +
-            // "</p> out of <p>" +
-            // questions.length +
-            // "</p></span>";
+        let scoreTag = "<span> Your personallity match with IT Job <p>";
+        // userScore +
+        // "</p> out of <p>" +
+        // questions.length +
+        // "</p></span>";
         scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
     } else if (userScore > 5) {
         // if user scored more than 1
-        let scoreTag =
-            "<span> Your personallity match with Management Job <p>"
-            // userScore +
-            // "</p> out of <p>" +
-            // questions.length +
-            // "</p></span>";
+        let scoreTag = "<span> Your personallity match with Management Job <p>";
+        // userScore +
+        // "</p> out of <p>" +
+        // questions.length +
+        // "</p></span>";
         scoreText.innerHTML = scoreTag;
     } else {
         // if user scored less than 1
-        let scoreTag =
-            "<span> Your personallity match with Arts Job <p>"
-            // userScore +
-            // "</p> out of <p>" +
-            // questions.length +
-            // "</p></span>";
+        let scoreTag = "<span> Your personallity match with Arts Job <p>";
+        // userScore +
+        // "</p> out of <p>" +
+        // questions.length +
+        // "</p></span>";
         scoreText.innerHTML = scoreTag;
     }
 }

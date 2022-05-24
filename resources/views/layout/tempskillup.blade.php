@@ -65,10 +65,7 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#services">Plan My Future</a></li>
-              <li class="scroll-to-section"><a href="#about">Skill Up</a></li>
-              <li class="scroll-to-section"><a href="#pricing">Find Job</a></li>
+                @yield('navbar')
               <li><div class="gradient-button"><a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>Hi
                <!-- @if(Auth::check()) -->
                {{ Auth::user()->name }}
