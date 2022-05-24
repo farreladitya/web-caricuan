@@ -25,12 +25,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
         .bg-skillup {
-            background-image: url('assets/images/skill-up.png');
+            background-image: url('assets/images/skillupluwast.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             /* background-attachment: fixed; */
             height: 100vh;
+            overflow: hidden;
+            /* width: 1200px; */
         }
         </style>
   </head>
