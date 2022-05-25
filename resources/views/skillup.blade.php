@@ -24,15 +24,15 @@
           <div class="col-lg-8 offset-lg-2">
             <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
               <h4 style="margin-top: -135px">We <em>Recommend</em> You</h4>
-              <img src="assets/images/heading-line-dec.png" alt="">
+                
               <p>Based on your background and skill, we recommend you some videos.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
+     
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-4 mx-4">
+          <div class="col-lg-3 mx-4">
             <div class="service-item first-service">
               <img src="{{URL::asset('assets/images/ppkd.png')}}" style="width: 28%; height: 28%; display:block; margin-left: auto; margin-right:auto" alt="" >
               <p class="kotak"> <b>Topic:</b>
@@ -44,7 +44,7 @@
             </div>
             </div>
           </div>
-          <div class="col-lg-4 mx-4">
+          <div class="col-lg-3 mx-4">
             <div class="service-item second-service">
               {{-- <img src="{{URL::asset('/assets/images/xl.png')}}" width="28%" height="28%" class="float-right"> --}}
               <img src="{{URL::asset('assets/images/brawijaya.png')}}" style="width: 28%; height: 28%; display:block; margin-left: auto; margin-right:auto" alt="">
@@ -57,7 +57,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mx-4">
+          <div class="col-lg-3 mx-4">
             <div class="service-item third-service">
               <img src="assets/images/karier.mu.png" style="width: 80%; height: 80%; display:block; margin-left: auto; margin-right:auto" alt="">
               <p class="kotak"> <b>Topic:</b>
@@ -70,15 +70,15 @@
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
 
-    <div id="about" class="about-us section" style="margin-left: 320px">
+    <div id="about" style="margin-left: 170px; margin-top:135px; margin-bottom:135px">
       {{-- <div class="container"> --}}
         <div class="row">
           <div class="col-lg-6 align-self-center">
             <div class="section-heading">
-              <div class="row">
+              <div class="row mt-3">
                 <div class="col-2 my-auto">
                   <img src="assets/images/digital.png" style="width: 80px; height: 80px; display:block; margin-left: auto; margin-right:auto" alt="">
                 </div>
@@ -89,34 +89,12 @@
                 </div>
               </div>
               {{-- <img src="assets/images/heading-line-dec.png" alt=""> --}}
-              <p class="kotak" >Pelatihan Bimbingan Teknis Digital Entrepreneurship Academy (Offline) merupakan rangkaian program Digital Talent Scholarship yang dilaksanakan Badan Penelitian dan Pengembangan SDM Kementerian Komunikasi dan Informatika pada tahun 2020.
-              </p>
+              <div class="row">
+                <div class="col-7">
+                <p class="kotak" >Pelatihan Bimbingan Teknis Digital Entrepreneurship Academy (Offline) merupakan rangkaian program Digital Talent Scholarship yang dilaksanakan Badan Penelitian dan Pengembangan SDM Kementerian Komunikasi dan Informatika pada tahun 2020.
+                </p>
+              </div>
             </div>
-            <div class="row">
-              {{-- <div class="col-lg-6">
-                <div class="box-item">
-                  <h4><a href="#">With the Best Mentor</a></h4>
-                  <p>Certified Mentors</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="box-item">
-                  <h4><a href="#">Video Access</a></h4>
-                  <p>Everywhere & Anytime</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="box-item">
-                  <h4><a href="#">Create Schedule</a></h4>
-                  <p>Customize your Schedule</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="box-item">
-                  <h4><a href="#">Latest Video</a></h4>
-                  <p>Everyday</p>
-                </div>
-              </div> --}}
             </div>
           </div>
           <div class="col-lg-6">
@@ -126,10 +104,9 @@
         </div>
       </div>
     </div>
-
-    <div class="container">
+ 
       <div class="row d-flex justify-content-center">
-        <div class="col-lg-4 mx-4">
+        <div class="col-lg-3 mx-4">
           <div class="service-item first-service">
             <img src="assets/images/ypia.png" style="width: 60%; height: 60%; display:block; margin-left: auto; margin-right:auto" alt="">
             <p class="kotak"> <b>Topic:</b>
@@ -141,10 +118,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mx-4">
+        <div class="col-lg-3 mx-4">
           <div class="service-item second-service">
             {{-- <img src="{{URL::asset('/assets/images/xl.png')}}" width="28%" height="28%" class="float-right"> --}}
-            <img src="assets/images/web.png" style="width: 30%; height: 30%; display:block; margin-left: auto; margin-right:autos " alt="">
+            <img src="assets/images/web.png" style="width: 30%; height: 30%; display:block; margin-left: auto; margin-right:auto " alt="">
             <p class="kotak"> <b>Topic:</b>
               <br>
               Learning and Teaching In Pandemi Era <br> <b>Organizer:</b> <br> Whiteboard Education<br> <b>Speakers:</b> <br>Eric Kunto Ariwibowo, M.Pd
@@ -154,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mx-4">
+        <div class="col-lg-3 mx-4">
           <div class="service-item third-service">
             <img src="assets/images/karier.mu.png" style="width: 80%; height: 80%; display:block; margin-left: auto; margin-right:auto" alt="">
             <p class="kotak"> <b>Topic:</b>
@@ -167,7 +144,7 @@
           </div>
         </div>
       </div>
-    </div>
+    
   </div>
 </div>
 @endsection
