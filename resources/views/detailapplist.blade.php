@@ -30,11 +30,11 @@
               </div>
               <div class="form-group">
                 <label for="tentang_lowongan">About</label>
-                <textarea id="autoresizing" class="form-control" readonly>{{ $p->tentang_lowongan }}</textarea>
+                <textarea class="form-control" id="textBox1" name="content" TextMode="MultiLine" onkeyup="setHeight('textBox1');" onkeydown="setHeight('textBox1');" readonly>{{ $p->tentang_lowongan }}</textarea>
               </div>
               <div class="form-group">
                 <label for="persyaratan">Requirements</label>
-                <textarea id="autoresizing" class="form-control" readonly>{{ $p->persyaratan }}</textarea>
+                <textarea class="form-control" id="textBox1" name="content" TextMode="MultiLine" onkeyup="setHeight('textBox1');" onkeydown="setHeight('textBox1');" readonly>{{ $p->persyaratan }}</textarea>
               </div>
             <div class="form-group">
                 <label for="lokasi">Location</label>

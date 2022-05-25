@@ -96,7 +96,10 @@ figcaption {
     border: 0;
     outline: 0;
 }
+textarea{
+    height: 300px;
 
+}
 /* clear fix */
 .grid:after {
     content: "";
@@ -1104,6 +1107,7 @@ Services Style
     height: 244px;
     z-index: 0;
 }
+
 
 .services .section-heading {
     text-align: center;
