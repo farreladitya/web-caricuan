@@ -32,7 +32,7 @@
       </div>
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-3 mx-4">
+          <div class="col-lg-4 mx-4">
             <div class="service-item first-service">
               <img src="{{URL::asset('assets/images/ppkd.png')}}" style="width: 28%; height: 28%; display:block; margin-left: auto; margin-right:auto" alt="" >
               <p class="kotak"> <b>Topic:</b>
@@ -44,7 +44,7 @@
             </div>
             </div>
           </div>
-          <div class="col-lg-3 mx-4">
+          <div class="col-lg-4 mx-4">
             <div class="service-item second-service">
               {{-- <img src="{{URL::asset('/assets/images/xl.png')}}" width="28%" height="28%" class="float-right"> --}}
               <img src="{{URL::asset('assets/images/brawijaya.png')}}" style="width: 28%; height: 28%; display:block; margin-left: auto; margin-right:auto" alt="">
@@ -57,7 +57,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 mx-4">
+          <div class="col-lg-4 mx-4">
             <div class="service-item third-service">
               <img src="assets/images/karier.mu.png" style="width: 80%; height: 80%; display:block; margin-left: auto; margin-right:auto" alt="">
               <p class="kotak"> <b>Topic:</b>
@@ -129,7 +129,7 @@
 
     <div class="container">
       <div class="row d-flex justify-content-center">
-        <div class="col-lg-3 mx-4">
+        <div class="col-lg-4 mx-4">
           <div class="service-item first-service">
             <img src="assets/images/ypia.png" style="width: 60%; height: 60%; display:block; margin-left: auto; margin-right:auto" alt="">
             <p class="kotak"> <b>Topic:</b>
@@ -141,7 +141,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 mx-4">
+        <div class="col-lg-4 mx-4">
           <div class="service-item second-service">
             {{-- <img src="{{URL::asset('/assets/images/xl.png')}}" width="28%" height="28%" class="float-right"> --}}
             <img src="assets/images/web.png" style="width: 30%; height: 30%; display:block; margin-left: auto; margin-right:autos " alt="">
@@ -154,7 +154,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 mx-4">
+        <div class="col-lg-4 mx-4">
           <div class="service-item third-service">
             <img src="assets/images/karier.mu.png" style="width: 80%; height: 80%; display:block; margin-left: auto; margin-right:auto" alt="">
             <p class="kotak"> <b>Topic:</b>
