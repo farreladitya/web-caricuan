@@ -58,7 +58,7 @@
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
             <h2>Lowongan</h2>
             <div class="gradient-button mt-3">
-                <a href="/applist">Kembali</a>
+                <a href="/applist">Back</a>
             </div>
           </div>
         </div>
@@ -88,16 +88,16 @@
                   </div>
                 <div class="form-group">
                     <label for="tentang_lowongan">About</label>
-                    <textarea id="autoresizing" type="text" class="form-control" id="tentang_lowongan" name="tentang_lowongan" aria-describedby="emailHelp" placeholder="About" value="{{ $p->tentang_lowongan }}" required></textarea>
+                    <textarea id="autoresizing" type="text" class="form-control" id="tentang_lowongan" name="tentang_lowongan" aria-describedby="emailHelp" placeholder="About" required>{{ $p->tentang_lowongan }}</textarea>
                   </div>
                 <div class="form-group">
                     <label for="persyaratan">Requirements</label>
-                    <textarea id="autoresizing" type="text" class="form-control" id="persyaratan" name="persyaratan" aria-describedby="emailHelp" placeholder="Requirements" value="{{ $p->persyaratan }}" required></textarea>
+                    <textarea id="autoresizing" type="text" class="form-control" id="persyaratan" name="persyaratan" aria-describedby="emailHelp" placeholder="Requirements"  required>{{ $p->persyaratan }}</textarea>
                   </div>
                 <div class="row">
                     <div class="col-4"></div>
                     <div class="col-6">
-                    <button type="submit" class="btn btn-primary">Simpan Data</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
                     </form>
                     @endforeach
                     </div>
