@@ -15,10 +15,10 @@ start_btn.onclick = () => {
     info_box.classList.add("activeInfo"); //show info box
 };
 
-// // if exitQuiz button clicked
-// exit_btn.onclick = () => {
-//     info_box.classList.remove("activeInfo"); //hide info box
-// };
+// if exitQuiz button clicked
+exit_btn.onclick = () => {
+    info_box.classList.remove("activeInfo"); //hide info box
+};
 
 // if continueQuiz button clicked
 continue_btn.onclick = () => {
@@ -60,10 +60,10 @@ restart_quiz.onclick = () => {
     next_btn.classList.remove("show"); //hide the next button
 };
 
-// // if quitQuiz button clicked
-// quit_quiz.onclick = () => {
-//     window.location.reload(); //reload the current window
-// };
+// if quitQuiz button clicked
+quit_quiz.onclick = () => {
+    window.location.reload(); //reload the current window
+};
 
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
