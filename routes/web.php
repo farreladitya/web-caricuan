@@ -25,9 +25,11 @@ Route::get('/home', function () {
 Route::get('/userhome', function () {
     return view('userhome');
 });
-Route::get('/pmf', function () {
+Route::get('/pmf2', function () {
     return view('pmf');
 });
+Route::post('/pmf', [App\Http\Controllers\PMFController::class, 'storeValue']);
+
 
 // Applist
 Route::get('/applist', [App\Http\Controllers\ApplistController::class, 'index']);

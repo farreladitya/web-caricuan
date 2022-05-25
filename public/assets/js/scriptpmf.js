@@ -1,4 +1,3 @@
-//selecting all required elements
 const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
@@ -26,11 +25,11 @@ continue_btn.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(30); //calling startTimer function
+    startTimer(15); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 };
 
-let timeValue = 30;
+let timeValue = 15;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -38,14 +37,14 @@ let counter;
 let counterLine;
 let widthValue = 0;
 
-// const restart_quiz = result_box.querySelector(".buttons .restart");
-// const quit_quiz = result_box.querySelector(".buttons .quit");
+const restart_quiz = result_box.querySelector(".buttons .restart");
+const quit_quiz = result_box.querySelector(".buttons .quit");
 
 // if restartQuiz button clicked
 restart_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 30;
+    timeValue = 15;
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -106,13 +105,8 @@ function showQuetions(index) {
         "</span></div>" +
         '<div class="option"><span>' +
         questions[index].options[1] +
-        "</span></div>";
-    // '<div class="option"><span>' +
-    // questions[index].options[2] +
-    // "</span></div>" +
-    // '<div class="option"><span>' +
-    // questions[index].options[3] +
-    // "</span></div>";
+        "</span></div>" 
+        ;
     que_text.innerHTML = que_tag; //adding new span tag inside que_tag
     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
 
@@ -124,8 +118,8 @@ function showQuetions(index) {
     }
 }
 // creating the new div tags which for icons
-let tickIconTag = '<div class="icon tick"></i></div>';
-let crossIconTag = '<div class="icon cross"></i></div>';
+let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
+let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
 //if user clicked on option
 function optionSelected(answer) {
@@ -134,7 +128,6 @@ function optionSelected(answer) {
     let userAns = answer.textContent; //getting user selected option
     let correcAns = questions[que_count].answer; //getting correct answer from array
     const allOptions = option_list.children.length; //getting all option items
-    answer.classList.add("correct"); //adding class to selected option
 
     if (userAns == correcAns) {
         //if user selected option is equal to array's correct answer
@@ -171,32 +164,39 @@ function showResult() {
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 8) {
+    if (userScore > 5) {
         // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = "<span> Your personallity match with IT Job <p>";
-        // userScore +
-        // "</p> out of <p>" +
-        // questions.length +
-        // "</p></span>";
+        let scoreTag =
+            "<span>Your personality match IT</span>";
         scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
-    } else if (userScore > 5) {
-        // if user scored more than 1
-        let scoreTag = "<span> Your personallity match with Management Job <p>";
-        // userScore +
-        // "</p> out of <p>" +
-        // questions.length +
-        // "</p></span>";
-        scoreText.innerHTML = scoreTag;
-    } else {
+    } 
+    else {
         // if user scored less than 1
-        let scoreTag = "<span> Your personallity match with Arts Job <p>";
-        // userScore +
-        // "</p> out of <p>" +
-        // questions.length +
-        // "</p></span>";
+        let scoreTag =
+        "<span>Your personality match Manager</span>";
         scoreText.innerHTML = scoreTag;
     }
+console.log($('meta[name="csrf-token"]').attr('content'));
+
+
+    sendResult(userScore);
+}
+
+function sendResult(result){
+    console.log($('meta[name="csrf-token"]').attr('content'))
+    const data = result;
+    $.ajax({
+    type: "POST",
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+      },
+    url: '/pmf',
+    data: data,
+    success: function() {
+      console.log("Valueadded");
+    }
+  })
 }
 
 function startTimer(time) {
