@@ -36,7 +36,7 @@ class ApplistController extends Controller
     public function tambah()
     {
 	// memanggil view tambah
-	return view('inputapplist');
+	return view('applist.inputapplist');
 
     }
     public function view()
@@ -45,7 +45,7 @@ class ApplistController extends Controller
     $lowongan = DB::table('lowongan')->get();
 
     // mengirim data pegawai ke view index
-    return view('viewapplist',['lowongan' => $lowongan]);
+    return view('applist.viewapplist',['lowongan' => $lowongan]);
 
     }
     // method untuk insert data ke table pegawai
@@ -70,7 +70,7 @@ class ApplistController extends Controller
     // mengambil data pegawai berdasarkan id yang dipilih
     $lowongan = DB::table('lowongan')->where('id',$id)->get();
     // passing data pegawai yang didapat ke view edit.blade.php
-    return view('detailapplist',['lowongan' => $lowongan]);
+    return view('applist.detailapplist',['lowongan' => $lowongan]);
 
     }
     public function edit($id)
@@ -78,7 +78,7 @@ class ApplistController extends Controller
     // mengambil data pegawai berdasarkan id yang dipilih
     $lowongan = DB::table('lowongan')->where('id',$id)->get();
     // passing data pegawai yang didapat ke view edit.blade.php
-    return view('editapplist',['lowongan' => $lowongan]);
+    return view('applist.editapplist',['lowongan' => $lowongan]);
 
     }
     public function update(Request $request)

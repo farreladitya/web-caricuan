@@ -30,7 +30,7 @@ class FindJobController extends Controller
     	$lowongan = DB::table('lowongan')->get();
 
     	// mengirim data pegawai ke view index
-    	return view('findjob',['lowongan' => $lowongan]);
+    	return view('findjob.findjob',['lowongan' => $lowongan]);
 
     }
 
@@ -39,7 +39,7 @@ class FindJobController extends Controller
     // mengambil data pegawai berdasarkan id yang dipilih
     $lowongan = DB::table('lowongan')->where('id',$id)->get();
     // passing data pegawai yang didapat ke view edit.blade.php
-    return view('detailfindjob',['lowongan' => $lowongan]);
+    return view('findjob.detailfindjob',['lowongan' => $lowongan]);
 
     }
 

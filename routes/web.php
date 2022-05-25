@@ -26,7 +26,7 @@ Route::get('/userhome', function () {
     return view('userhome');
 });
 Route::get('/pmf2', function () {
-    return view('pmf');
+    return view('planmyfuture.pmf');
 });
 Route::post('/pmf', [App\Http\Controllers\PMFController::class, 'storeValue']);
 
@@ -46,7 +46,7 @@ Route::get('/register', function () {
 });
 //Skill Up
 Route::get('/skillup', function () {
-    return view('skillup');
+    return view('skillup.skillup');
 });
 Route::post('/save', [RegisterController::class, 'store']);
 
