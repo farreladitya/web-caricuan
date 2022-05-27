@@ -51,7 +51,7 @@ class RegisterController extends Controller
 
     public function store(Request $request)
     {
-        return $request->file('image')->store('post-images');
+        return $request->file('photo')->store('photo');
         // ddd($request);
 
         $validatedData = $request->validate([
@@ -59,6 +59,7 @@ class RegisterController extends Controller
         'username' => ['required', 'string', 'max:255', 'unique:users'],
         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
         'password' => ['required', 'string', 'min:8', 'confirmed'],
+        'photo' => ['required', 'string'],
         ]);
     }
     protected function validator(array $data)
@@ -87,6 +88,13 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'role' => 1,
         ]);
+
+        if (request()->hasFile('photo')){
+            $photo = request()->file('photo')->getClientOriginalName();
+            request()->file('photo')->storeAs('photo', $user->id . '/' . $photo, '');
+            $user->update(['photo' => $photo]);
+        }
+
         return $user;
         $user->assignRole('user');
 
