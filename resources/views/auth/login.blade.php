@@ -169,8 +169,7 @@
           <div class="content">
             <h3>One of us ?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
+                Cari.Cuan adalah sebuah platform yang menghubungkan para pelamar dengan penyedia lapangan pekerjaan
             </p>
             <button class="btn transparent" id="sign-in-btn">
             Sign in
