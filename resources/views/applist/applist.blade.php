@@ -54,7 +54,7 @@
   <div id="content" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
       <div class="row" >
-            <div class="gradient-button mt-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
+            <div class="gradient-button mt-3 mb-3 wow fadeInLeft d-flex justify-content-center" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
                 <a href="/applist/tambah"> Create new job vacancy</a>
             </div>
       </div>
