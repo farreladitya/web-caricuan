@@ -30,45 +30,25 @@
           </div>
         </div>
       </div>
-     
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-3 mx-4">
-            <div class="service-item first-service">
-              <img src="{{URL::asset('assets/images/ppkd.png')}}" style="width: 28%; height: 28%; display:block; margin-left: auto; margin-right:auto" alt="" >
-              <p class="kotak"> <b>Topic:</b>
-                <br>
-                Improving Our Public Speaking <br> <b>Organizer:</b>  <br> PPKD Jakarta Pusat <br> <b>Speakers: </b> <br> Sunyoto Wirawan, S.T., M.T
-              </p>
+      @foreach ($users as $u)
+      {{$u->photo}}
+      @endforeach
+      
+      <div class="row d-flex justify-content-center">
+        {{-- @foreach ($skillup as $s)
+        <div class="col-lg-3 mx-4">
+          <div class="service-item first-service">
+            <img src="{{URL::asset('assets/images/ppkd.png')}}" style="width: 28%; height: 28%; display:block; margin-left: auto; margin-right:auto" alt="" >
+            <p class="kotak"> <b>Topic:</b>
+              <br>
+              {{$s->topik}} <br> <b>Organizer:</b>  <br> {{$s->penyelenggara}} <br> <b>Speakers: </b> <br> {{$s->pembicara}}
+            </p>
               <div class="d-flex justify-content-center">
-              <a href="" class="btn" style="background:#00E6E9; border-radius:25px"> Watch Now</a>
+              <a href="{{$s->link_video}}" class="btn" style="background:#00E6E9; border-radius:25px"> Watch Now</a>
             </div>
             </div>
           </div>
-          <div class="col-lg-3 mx-4">
-            <div class="service-item second-service">
-              {{-- <img src="{{URL::asset('/assets/images/xl.png')}}" width="28%" height="28%" class="float-right"> --}}
-              <img src="{{URL::asset('assets/images/brawijaya.png')}}" style="width: 28%; height: 28%; display:block; margin-left: auto; margin-right:auto" alt="">
-              <p class="kotak"> <b>Topic:</b>
-                <br>
-                Improving Jurnalism Skills <br> <b>Organizer:</b>  <br> Brawijaya University <br> <b>Speakers:</b>  <br>Sanjaya Oktaviano, S.I.Kom.
-              </p>
-              <div class="d-flex justify-content-center">
-                <a href="" class="btn" style="background:#00E6E9; border-radius:25px"> Watch Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 mx-4">
-            <div class="service-item third-service">
-              <img src="assets/images/karier.mu.png" style="width: 80%; height: 80%; display:block; margin-left: auto; margin-right:auto" alt="">
-              <p class="kotak"> <b>Topic:</b>
-                <br>
-                Optimization of Communication Skills <br> <b>Organizer:</b> <br> Karier.mu <br> <b>Speakers:</b>  <br>Stephanus Avata, S.I.Kom.
-              </p>
-              <div class="d-flex justify-content-center">
-                <a href="" class="btn" style="background:#00E6E9; border-radius:25px"> Watch Now</a>
-              </div>
-            </div>
-          </div>
+          @endforeach --}}
         </div>
       
     </div>
@@ -147,4 +127,5 @@
     
   </div>
 </div>
+
 @endsection

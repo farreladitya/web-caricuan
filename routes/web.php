@@ -45,13 +45,11 @@ Route::get('/register', function () {
     return view('register');
 });
 //Skill Up
-Route::get('/skillup', function () {
-    return view('skillup.skillup');
-});
 Route::post('/save', [RegisterController::class, 'store']);
 
 Auth::routes();
 
+Route::get('/skillup', [App\Http\Controllers\SkillupController::class, 'index'])->name('skillup');
 Route::get('/findjob', [App\Http\Controllers\FindJobController::class, 'index'])->name('findjob');
 Route::get('/findjob/detail/{id}', [App\Http\Controllers\FindJobController::class, 'detail'])->name('detailfindjob');
 Route::middleware('role:admin')->get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])->name('applist');

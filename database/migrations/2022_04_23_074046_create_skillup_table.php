@@ -15,11 +15,11 @@ class CreateSkillupTable extends Migration
     {
         Schema::create('skillup', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_skillup');
-            $table->string('deskripsi_skillup');
-            $table->string('instansi');
+            $table->string('logo');
+            $table->string('topik');
+            $table->string('penyelenggara');
+            $table->string('pembicara');
             $table->string('link_video');
-            $table->dateTime("start_date");
             $table->timestamps();
         });
     }
