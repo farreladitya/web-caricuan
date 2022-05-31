@@ -26,12 +26,11 @@ class SkillupController extends Controller
     public function index()
     {
     	// mengambil data dari table pegawai
-    	// $skillup = DB::table('skillup')->get();
-    	$users = DB::table('users')->get();
+    	$skillup = DB::table('skillup')->take(3)->get();
+    	$skillup2 = DB::table('skillup')->skip(3)->take(3)->get();
 
     	// mengirim data pegawai ke view index
-    	return view('skillup.skillup',['users' => $users]);
-    	// return view('skillup.skillup',['skillup' => $skillup]);
+    	return view('skillup.skillup',['skillup' => $skillup, 'skillup2' => $skillup2]);
 
     }
 }
