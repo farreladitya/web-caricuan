@@ -33,4 +33,19 @@ class SkillupController extends Controller
     	return view('skillup.skillup',['skillup' => $skillup, 'skillup2' => $skillup2]);
 
     }
+
+    public function tambah()
+    {
+	// memanggil view tambah
+	return view('skillup.inputskillup');
+    }
+
+    public function edit($id)
+    {
+    // mengambil data pegawai berdasarkan id yang dipilih
+    $skillup = DB::table('skillup')->where('id',$id)->get();
+    // passing data pegawai yang didapat ke view edit.blade.php
+    return view('skillup.editskillup',['skillup' => $skillup]);
+
+    }
 }
