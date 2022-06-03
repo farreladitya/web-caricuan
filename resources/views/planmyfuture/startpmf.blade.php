@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/animated.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/owl.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/styleapplist.css')}}">
+    <link rel="stylesheet" href="assets/css/stylepmf.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
@@ -35,6 +36,10 @@
             overflow: hidden;
             /* width: 1200px; */
         }
+        .font{
+            color: #fff;
+            font-family:"poppins";
+        }
         </style>
 
     <script src=
@@ -42,7 +47,12 @@
         </script>
   </head>
 <body>
-    <div class="bg-startpmf"><h1 style="color: #fff">BISA GINI LO FIR<h1></div>
+    <div class="bg-startpmf">
+    <h2 class="text-center font">Take the Online Aptitude Test</h2>
+    <h1 class="text-center font mt-5">FREE!!</h1>
+    <h6 class="text-center font mt-5">So that you can find out the type of work that suits your talents and abilities</h6>
+    <div class="start_btn justify-content-center d-flex"><button><a href="/pmf2">TRY IT FREE!</button></a></div>
+    </div>
 </body>
 <!-- Scripts -->
 <script src="{{asset("jquery/jquery.min.js")}}"></script>
