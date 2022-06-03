@@ -18,20 +18,24 @@ use App\Http\Controllers\RegisterController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+// Home RAIHANDA
 Route::get('/home', function () {
     return view('home');
 });
 Route::get('/userhome', function () {
     return view('userhome');
 });
+// Plan My Future FIRDA
 Route::get('/pmf2', function () {
     return view('planmyfuture.pmf');
+});
+Route::get('/startpmf', function () {
+    return view('planmyfuture.startpmf');
 });
 Route::post('/pmf', [App\Http\Controllers\PMFController::class, 'storeValue']);
 
 
-// Applist
+// Applist FARREL
 Route::get('/applist', [App\Http\Controllers\ApplistController::class, 'index']);
 Route::get('/applist/tambah',  [App\Http\Controllers\ApplistController::class, 'tambah']);
 Route::post('/applist/store',  [App\Http\Controllers\ApplistController::class, 'store']);
@@ -40,11 +44,11 @@ Route::post('/applist/store',  [App\Http\Controllers\ApplistController::class, '
 Route::get('/findjob', [App\Http\Controllers\FindJobController::class, 'index']);
 Route::get('/inputapplist', 'InputApplistController@inputapplist');
 
-// Register and Login
+// Register and Login RAIHANDA
 Route::get('/register', function () {
     return view('register');
 });
-//Skill Up
+//Skill Up AIDA
 Route::post('/save', [RegisterController::class, 'store']);
 
 Auth::routes();
@@ -58,11 +62,11 @@ Route::middleware('role:admin')->get('//skillup/hapus/{id}', [App\Http\Controlle
 Route::middleware('role:admin')->get('//skillup/view', [App\Http\Controllers\SkillupController::class, 'view'])->name('viewskillup');
 Route::middleware('role:admin')->post('/skillup/detail/{id}','SkillupController@store');
 
-//findjob
+//findjob FEBINA
 Route::get('/findjob', [App\Http\Controllers\FindJobController::class, 'index'])->name('findjob');
 Route::get('/findjob/detail/{id}', [App\Http\Controllers\FindJobController::class, 'detail'])->name('detailfindjob');
 
-// Applist
+// Applist FARREL
 Route::middleware('role:admin')->get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])->name('applist');
 Route::middleware('role:admin')->get('/inputapplist', [App\Http\Controllers\ApplistController::class, 'tambah'])->name('inputapplist');
 Route::middleware('role:admin')->get('/applist/detail/{id}', [App\Http\Controllers\ApplistController::class, 'detail'])->name('detailapplist');
