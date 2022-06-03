@@ -17,7 +17,7 @@
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12" style="margin-left: -100px">
-                    <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Masukkan Lowongan</p>
+                    <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Masukkan Topik</p>
                 </div>
                 </div>
 
@@ -55,7 +55,7 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h2>Lowongan</h2>
+            <h2>Topik</h2>
             <div class="gradient-button mt-3">
                 <a href="/applist">Back</a>
             </div>
@@ -65,24 +65,24 @@
       <div class="row">
           <div class="col-2"></div>
           <div class="col-8 justify-content-center">
-              @foreach ($lowongan as $p )
-            <form action="/applist/update" method="post">
+              @foreach ($skillup as $s )
+            <form action="/skillup/update" method="post">
                 {{ csrf_field() }}
-                <input type="hidden" name="id" value="{{ $p->id }}"> <br/>
+                <input type="hidden" name="id" value="{{ $s->id }}"> <br/>
                 <div class="form-group">
-                    <label for="name">Company</label>
-                    <input type="text" class="form-control" id="perusahaan" name="perusahaan" placeholder="Company" value="{{ $p->perusahaan }}" required>
+                    <label for="logos">Logo</label>
+                    <input type="text" class="form-control" id="logos" name="logos" placeholder="Logo" value="{{ $s->logo }}" required>
                   </div>                <div class="form-group">
-                    <label for="gaji">Salary</label>
-                    <input type="text" class="form-control" id="gaji" name="gaji" aria-describedby="emailHelp" placeholder="Salary" value="{{ $p->gaji }}" required>
+                    <label for="topik">Topic</label>
+                    <input type="text" class="form-control" id="topik" name="topik" aria-describedby="emailHelp" placeholder="Topic" value="{{ $s->topik }}" required>
                   </div>
                 <div class="form-group">
-                    <label for="tentang_lowongan">About</label>
-                    <textarea id="autoresizing" type="text" class="form-control" id="tentang_lowongan" name="tentang_lowongan" aria-describedby="emailHelp" placeholder="About" required>{{ $p->tentang_lowongan }}</textarea>
+                    <label for="penyelenggara">Organizer</label>
+                    <input id="autoresizing" type="text" class="form-control" id="penyelenggara" name="penyelenggara" aria-describedby="emailHelp" placeholder="Organizer" value="{{ $s->penyelenggara}}" required>
                   </div>
                 <div class="form-group">
-                    <label for="persyaratan">Requirements</label>
-                    <textarea id="autoresizing" type="text" class="form-control" id="persyaratan" name="persyaratan" aria-describedby="emailHelp" placeholder="Requirements"  required>{{ $p->persyaratan }}</textarea>
+                    <label for="pembicara">Speakers</label>
+                    <input id="autoresizing" type="text" class="form-control" id="pembicara" name="pembicara" aria-describedby="emailHelp" placeholder="Speakers" value="{{ $s->pembicara }}" required>
                   </div>
                 <div class="row">
                     <div class="col-4"></div>

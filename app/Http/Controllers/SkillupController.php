@@ -58,85 +58,46 @@ class SkillupController extends Controller
             'penyelenggara' => $request->penyelenggara,
             'pembicara' => $request->pembicara,
             'link_video' => $request->Link_video,
-            
         ]);
         // alihkan halaman ke halaman pegawai
-        return redirect('/applist');
-
+        return redirect('/skillup');
     }
 
     public function detail($id)
     {
     // mengambil data pegawai berdasarkan id yang dipilih
-    $lowongan = DB::table('lowongan')->where('id',$id)->get();
+    $skillup = DB::table('skillup')->where('id',$id)->get();
     // passing data pegawai yang didapat ke view edit.blade.php
-    return view('applist.detailapplist',['lowongan' => $lowongan]);
-
+    return view('skillup.detailskillup',['skillup' => $skillup]);
     }
+
     public function edit($id)
     {
     // mengambil data pegawai berdasarkan id yang dipilih
-    $lowongan = DB::table('lowongan')->where('id',$id)->get();
+    $skillup = DB::table('skillup')->where('id',$id)->get();
     // passing data pegawai yang didapat ke view edit.blade.php
-    return view('applist.editapplist',['lowongan' => $lowongan]);
-
+    return view('skillup.editskillup',['skillup' => $skillup]);
     }
+
     public function update(Request $request)
     {
 	// update data pegawai
-	DB::table('lowongan')->where('id',$request->id)->update([
-		'perusahaan' => $request->perusahaan,
-            'jabatan' => $request->jabatan,
-            'lokasi' => $request->lokasi,
-            'tentang_lowongan' => $request->tentang_lowongan,
-            'persyaratan' => $request->persyaratan,
-            'gaji' => $request->gaji
+	DB::table('skillup')->where('id',$request->id)->update([
+		    'logo' => $request->logo,
+            'topik' => $request->topik,
+            'penyelenggara' => $request->penyelenggara,
+            'pembicara' => $request->pembicara,
+            'link_video' => $request->link_video,
 	]);
 	// alihkan halaman ke halaman pegawai
-	return redirect('/applist/detail/'.$request->id);
+	return redirect('/skillup/detail/'.$request->id);
     }
     public function hapus($id)
     {
 	// menghapus data pegawai berdasarkan id yang dipilih
-	DB::table('lowongan')->where('id',$id)->delete();
+	DB::table('skillup')->where('id',$id)->delete();
 
 	// alihkan halaman ke halaman pegawai
-	return redirect('/applist');
+	return redirect('/skillup');
     }
-
-    // public function store(Request $request)
-    // {
-    //     // insert data ke table pegawai
-    //     DB::table('skillup')->insert([
-	// 	    'logo' => $request->logo,
-    //         'topik' => $request->topik,
-    //         'penyelenggara' => $request->penyelenggara,
-    //         'pembicara' => $request->pembicara,
-    //         'link_video' => $request->link_video,
-	// ]);
-    //     // alihkan halaman ke halaman pegawai
-    //     return redirect('/skillup');
-
-    // }
-
-    // public function edit($id)
-    // {
-    // // mengambil data pegawai berdasarkan id yang dipilih
-    // $skillup = DB::table('skillup')->where('id',$id)->get();
-    // // passing data pegawai yang didapat ke view edit.blade.php
-    // return view('skillup.editskillup',['skillup' => $skillup]);
-    // }
-
-    // public function update(Request $request)
-    // {
-	// // update data skillup
-	// DB::table('skillup')->where('id',$request->id)->update([
-	// 	    'logo' => $request->logo,
-    //         'topik' => $request->topik,
-    //         'penyelenggara' => $request->penyelenggara,
-    //         'pembicara' => $request->pembicara,
-    //         'link_video' => $request->link_video,
-	// ]);
-	// return redirect('/skillup'.$request->id);
-    // }
 }
