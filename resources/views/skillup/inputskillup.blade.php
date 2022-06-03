@@ -58,7 +58,7 @@
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
             <h2>Rekomendasi</h2>
             <div class="gradient-button mt-3">
-                <a href="/applist">Kembali</a>
+                <a href="/skillup">Kembali</a>
             </div>
           </div>
         </div>
@@ -66,27 +66,27 @@
       <div class="row">
           <div class="col-2"></div>
           <div class="col-8 justify-content-center">
-            <form action="/applist/store" method="post">
+            <form action="/skillup/store" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <div class="form-group">
-                        <label for="lokasi">Logo</label>
-                        <input type="file" class="form-control" id="skillup" name="skillup" placeholder="Logo" required>
+                        <label for="logo">Logo</label>
+                        <input type="file" class="form-control" id="logo" name="logo" placeholder="Logo" required>
                       </div>
-                    <label for="name">Topic</label>
-                    <input type="text" class="form-control" id="skillup" name="skillup" placeholder="Topic" required>
+                    <label for="topik">Topic</label>
+                    <input type="text" class="form-control" id="topik" name="topik" placeholder="Topic" required>
                   </div>
                 <div class="form-group">
-                    <label for="jabatan">Organizer</label>
-                    <input type="text" class="form-control" id="skillup" name="skillup" placeholder="Organizer" required>
+                    <label for="penyelenggara">Organizer</label>
+                    <input type="text" class="form-control" id="penyelenggara" name="penyelenggara" placeholder="Organizer" required>
                   </div>
                 <div class="form-group">
-                    <label for="lokasi">Speakers</label>
-                    <input type="text" class="form-control" id="skillup" name="skillup" placeholder="Speakers" required>
+                    <label for="pembicara">Speakers</label>
+                    <input type="text" class="form-control" id="pembicara" name="pembicara" placeholder="Speakers" required>
                   </div>
                   <div class="form-group">
-                    <label for="lokasi">Link</label>
-                    <input type="text" class="form-control" id="skillup" name="skillup" placeholder="Link" required>
+                    <label for="link_video">Link</label>
+                    <input type="text" class="form-control" id="link_video" name="link_video" placeholder="Link" required>
                   </div>
                 <div class="row">
                     <div class="col-4"></div>

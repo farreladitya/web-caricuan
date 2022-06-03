@@ -39,6 +39,21 @@ class SkillupController extends Controller
 	return view('skillup.inputskillup');
     }
 
+    public function store(Request $request)
+    {
+        // insert data ke table pegawai
+        DB::table('skillup')->insert([
+		    'logo' => $request->logo,
+            'topik' => $request->topik,
+            'penyelenggara' => $request->penyelenggara,
+            'pembicara' => $request->pembicara,
+            'link_video' => $request->link_video,
+	]);
+        // alihkan halaman ke halaman pegawai
+        return redirect('/skillup');
+
+    }
+
     public function edit($id)
     {
     // mengambil data pegawai berdasarkan id yang dipilih

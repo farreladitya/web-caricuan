@@ -51,9 +51,12 @@ Auth::routes();
 
 Route::middleware('role:admin')->get('/skillup/edit/{id}', [App\Http\Controllers\SkillupController::class, 'edit'])->name('editskillup');
 Route::middleware('role:admin')->get('/inputskillup', [App\Http\Controllers\SkillupController::class, 'tambah'])->name('inputskillup');
+Route::middleware('role:admin')->post('/skillup/update', [App\Http\Controllers\ApplistController::class, 'update'])->name('editskillup');
 Route::get('/skillup', [App\Http\Controllers\SkillupController::class, 'index'])->name('skillup');
 Route::get('/findjob', [App\Http\Controllers\FindJobController::class, 'index'])->name('findjob');
 Route::get('/findjob/detail/{id}', [App\Http\Controllers\FindJobController::class, 'detail'])->name('detailfindjob');
+
+// Applist
 Route::middleware('role:admin')->get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])->name('applist');
 Route::middleware('role:admin')->get('/inputapplist', [App\Http\Controllers\ApplistController::class, 'tambah'])->name('inputapplist');
 Route::middleware('role:admin')->get('/applist/detail/{id}', [App\Http\Controllers\ApplistController::class, 'detail'])->name('detailapplist');
@@ -62,6 +65,8 @@ Route::middleware('role:admin')->post('/applist/update', [App\Http\Controllers\A
 Route::middleware('role:admin')->get('//applist/hapus/{id}', [App\Http\Controllers\ApplistController::class, 'hapus'])->name('detailapplist');
 Route::middleware('role:admin')->get('//applist/view', [App\Http\Controllers\ApplistController::class, 'view'])->name('viewapplist');
 Route::middleware('role:admin')->post('/applist/detail/{id}','ApplistController@store');
+
+Route::middleware('role:admin')->post('/skillup/store','SkillupController@store');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
