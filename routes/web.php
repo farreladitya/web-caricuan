@@ -49,7 +49,7 @@ Route::post('/save', [RegisterController::class, 'store']);
 
 Auth::routes();
 
-Route::middleware('role:admin')->get('/skillup/edit', [App\Http\Controllers\SkillupController::class, 'edit'])->name('editskillup');
+Route::middleware('role:admin')->get('/skillup/edit/{id}', [App\Http\Controllers\SkillupController::class, 'edit'])->name('editskillup');
 Route::middleware('role:admin')->get('/inputskillup', [App\Http\Controllers\SkillupController::class, 'tambah'])->name('inputskillup');
 Route::get('/skillup', [App\Http\Controllers\SkillupController::class, 'index'])->name('skillup');
 Route::get('/findjob', [App\Http\Controllers\FindJobController::class, 'index'])->name('findjob');

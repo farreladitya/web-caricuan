@@ -31,7 +31,6 @@ class SkillupController extends Controller
 
     	// mengirim data pegawai ke view index
     	return view('skillup.skillup',['skillup' => $skillup, 'skillup2' => $skillup2]);
-
     }
 
     public function tambah()
@@ -46,6 +45,18 @@ class SkillupController extends Controller
     $skillup = DB::table('skillup')->where('id',$id)->get();
     // passing data pegawai yang didapat ke view edit.blade.php
     return view('skillup.editskillup',['skillup' => $skillup]);
+    }
 
+    public function update(Request $request)
+    {
+	// update data skillup
+	DB::table('skillup')->where('id',$request->id)->update([
+		    'logo' => $request->logo,
+            'topik' => $request->topik,
+            'penyelenggara' => $request->penyelenggara,
+            'pembicara' => $request->pembicara,
+            'link_video' => $request->link_video,
+	]);
+	return redirect('/skillup'.$request->id);
     }
 }
