@@ -14,7 +14,7 @@
 </div> --}}
 
 <div id="services" class="services section">
-    <div class="container">
+    <div class="container" style="">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">

@@ -24,6 +24,17 @@
     <link rel="stylesheet" href="{{asset('assets/css/styleapplist.css')}}">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        .bg-startpmf {
+            background-image: url('assets/images/startpmf.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* background-attachment: fixed; */
+            height: 100vh;
+            overflow: hidden;
+            /* width: 1200px; */
+        }
         </style>
 
     <script src=
@@ -31,9 +42,7 @@
         </script>
   </head>
 <body>
-    <div class="div" style="background-image:{{asset('assets/images/startpmf.png')}}">
-
-    </div>
+    <div class="bg-startpmf"><h1 style="color: #fff">BISA GINI LO FIR<h1></div>
 </body>
 <!-- Scripts -->
 <script src="{{asset("jquery/jquery.min.js")}}"></script>
