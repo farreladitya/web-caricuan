@@ -53,6 +53,12 @@ Route::middleware('role:admin')->get('/skillup/edit/{id}', [App\Http\Controllers
 Route::middleware('role:admin')->get('/inputskillup', [App\Http\Controllers\SkillupController::class, 'tambah'])->name('inputskillup');
 Route::middleware('role:admin')->post('/skillup/update', [App\Http\Controllers\ApplistController::class, 'update'])->name('editskillup');
 Route::get('/skillup', [App\Http\Controllers\SkillupController::class, 'index'])->name('skillup');
+Route::middleware('role:admin')->get('/skillup/detail/{id}', [App\Http\Controllers\SkillupController::class, 'detail'])->name('detailskillup');
+Route::middleware('role:admin')->get('//skillup/hapus/{id}', [App\Http\Controllers\SkillupController::class, 'hapus'])->name('detailskillup');
+Route::middleware('role:admin')->get('//skillup/view', [App\Http\Controllers\SkillupController::class, 'view'])->name('viewskillup');
+Route::middleware('role:admin')->post('/skillup/detail/{id}','SkillupController@store');
+
+//findjob
 Route::get('/findjob', [App\Http\Controllers\FindJobController::class, 'index'])->name('findjob');
 Route::get('/findjob/detail/{id}', [App\Http\Controllers\FindJobController::class, 'detail'])->name('detailfindjob');
 
