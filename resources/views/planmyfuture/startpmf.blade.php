@@ -39,6 +39,11 @@
         .font{
             color: #fff;
             font-family:"poppins";
+            font-size: 45px;
+        }
+        .h6{
+            color: #fff;
+            font-family:"poppins";
         }
         </style>
 
@@ -48,10 +53,10 @@
   </head>
 <body>
     <div class="bg-startpmf">
-    <h2 class="text-center font">Take the Online Aptitude Test</h2>
-    <h1 class="text-center font mt-5">FREE!!</h1>
-    <h6 class="text-center font mt-5">So that you can find out the type of work that suits your talents and abilities</h6>
-    <div class="start_btn justify-content-center d-flex"><button><a href="/pmf2">TRY IT FREE!</button></a></div>
+    <h3 class="text-center font mt-5">Take the Online Aptitude Test</h3>
+    <h1 class="text-center font mt-5 font-weight-bold" style="font-size: 80px">FREE!!</h1>
+    <h6 class="text-center h6 mt-5 font-weight-light">So that you can find out the type of work that suits your talents and abilities</h6>
+    <div class="start_btn justify-content-center d-flex mt-3"><button><a href="/pmf2">TRY IT FREE!</button></a></div>
     </div>
 </body>
 <!-- Scripts -->
