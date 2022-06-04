@@ -15,16 +15,23 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
+// Home RAIHANDA
 Route::get('/', function () {
     return view('welcome');
 });
-// Home RAIHANDA
+
 Route::get('/home', function () {
     return view('home');
 });
 Route::get('/userhome', function () {
     return view('userhome');
 });
+
+// Register and Login RAIHANDA
+Route::get('/register', function () {
+    return view('register');
+});
+
 // Plan My Future FIRDA
 Route::get('/pmf2', function () {
     return view('planmyfuture.pmf');
@@ -44,10 +51,7 @@ Route::post('/pmf', [App\Http\Controllers\PMFController::class, 'storeValue']);
 Route::get('/findjob', [App\Http\Controllers\FindJobController::class, 'index']);
 Route::get('/inputapplist', 'InputApplistController@inputapplist');
 
-// Register and Login RAIHANDA
-Route::get('/register', function () {
-    return view('register');
-});
+
 //Skill Up AIDA
 Route::post('/save', [RegisterController::class, 'store']);
 
