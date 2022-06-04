@@ -117,10 +117,9 @@ function showQuetions(index) {
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
-// creating the new div tags which for icons
-let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
-let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
-
+// creating the new div tags which for icon
+let tickIconTag = '<div class="icon tick"></div>';
+let crossIconTag = '<div class="icon cross"></div>';
 //if user clicked on option
 function optionSelected(answer) {
     clearInterval(counter); //clear counter
@@ -168,13 +167,13 @@ function showResult() {
         // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag =
-            "<span>Your personality match IT</span>";
+            "<span>Your personality match System Analyst</span>";
         scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
     } 
     else {
         // if user scored less than 1
         let scoreTag =
-        "<span>Your personality match Manager</span>";
+        "<span>Your personality match Accounting and Finance</span>";
         scoreText.innerHTML = scoreTag;
     }
 console.log($('meta[name="csrf-token"]').attr('content'));
