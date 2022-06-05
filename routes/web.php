@@ -27,6 +27,10 @@ Route::get('/userhome', function () {
     return view('userhome');
 });
 
+//Upload File Raihanda
+Route::get('/upload', 'UploadController@upload');
+Route::post('/upload/proses', 'UploadController@proses_upload');
+
 // Register and Login RAIHANDA
 Route::get('/register', function () {
     return view('register');
