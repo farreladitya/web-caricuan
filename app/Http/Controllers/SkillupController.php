@@ -98,6 +98,6 @@ class SkillupController extends Controller
 	DB::table('skillup')->where('id',$id)->delete();
 
 	// alihkan halaman ke halaman pegawai
-	return redirect('/skillup');
+	return redirect('/skillup/view');
     }
 }
