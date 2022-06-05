@@ -28,8 +28,13 @@ Route::get('/userhome', function () {
 });
 
 //Upload File Raihanda
-Route::get('/upload', 'UploadController@upload');
-Route::post('/upload/proses', 'UploadController@proses_upload');
+// Route::get('/findjob', 'FindJobController@upload');
+// Route::post('/findjob/proses', 'FindJobController@proses_upload');
+
+Route::get('/uploadfindjob', [App\Http\Controllers\FindJobController::class, 'upload']);
+Route::post('/uploadfindjob/proses', [App\Http\Controllers\FindJobController::class, 'proses_upload']);
+Route::get('/uploadfindjob/hapus/{id}', [App\Http\Controllers\FindJobController::class, 'hapus']);
+
 
 // Register and Login RAIHANDA
 Route::get('/register', function () {
