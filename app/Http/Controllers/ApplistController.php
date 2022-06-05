@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Gambar;
 
 
 class ApplistController extends Controller
@@ -37,6 +38,7 @@ class ApplistController extends Controller
     {
 	// memanggil view tambah
 	return view('applist.inputapplist');
+    
 
     }
     public function view()
@@ -44,8 +46,16 @@ class ApplistController extends Controller
     // mengambil data dari table pegawai
     $lowongan = DB::table('lowongan')->get();
 
+
+    $gambar = Gambar::get();
+
+
     // mengirim data pegawai ke view index
-    return view('applist.viewapplist',['lowongan' => $lowongan]);
+    return view('applist.viewapplist',['lowongan' => $lowongan]); 
+    return view('applist.viewapplist',['gambar' => $gambar]); 
+
+
+
 
     }
     // method untuk insert data ke table pegawai

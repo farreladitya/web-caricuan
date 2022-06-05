@@ -38,9 +38,12 @@
             <tr>
                 <td>{{ $p->perusahaan }}</td>
                 <td>{{ $p->jabatan }}</td>
-                <td><a href="/applist/edit/{{ $p->id }}">View</a></td>
+
+                @foreach($gambar as $g)
+                <td><a href="{asset('/data_file/'.$g->file) }}">View</a></td>
                 <td>
                     <a href="/applist/edit/{{ $p->id }}">View</a>
+                  @endforeach
                 </td>
                 <td>
                     <a href="/applist/edit/{{ $p->id }}" style="color: rgb(14, 197, 30)">Accept</a>
