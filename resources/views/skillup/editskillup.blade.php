@@ -17,13 +17,13 @@
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12" style="margin-left: -100px">
-                    <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Masukkan Topik</p>
+                    <h2 style="font-size: 65px; font-family: 'Poppins', sans-serif; margin-top: 150px; color: #ffff">Cari.Cuan</h2>
                 </div>
                 </div>
 
                 <div class="row" style="margin-left: -210px">
                     <div class="col-6">
-                        <form action="/applist/cari" method="GET">
+                        {{-- <form action="/applist/cari" method="GET">
                         <div class="form-group has-search center float-right">
                         <input type="text" class="form-control" placeholder="Search for Position..." name="cari" value="{{ old('cari') }}">
                         </div>
@@ -32,7 +32,7 @@
                         <div class="gradient-button">
                             <a  type="submit" value="CARI">Search</a>
                         </div>
-                    </form>
+                    </form> --}}
 
                     </div>
                 </div>
@@ -41,7 +41,7 @@
 
             <div class="col-lg-6" style="margin-right: -200px" >
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="{{asset("assets/images/Go startup HMSI1.png")}}" alt="">
+                <img src="{{asset("assets/images/listt.png")}}" alt="">
               </div>
             </div>
           </div>

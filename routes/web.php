@@ -56,7 +56,7 @@ Route::get('/applist', [App\Http\Controllers\ApplistController::class, 'index'])
 Route::get('/applist/tambah',  [App\Http\Controllers\ApplistController::class, 'tambah']);
 Route::post('/applist/store',  [App\Http\Controllers\ApplistController::class, 'store']);
 // Skillup Aida
-Route::get('/applist', [App\Http\Controllers\SkillupController::class, 'index']);
+Route::get('/skillup', [App\Http\Controllers\SkillupController::class, 'index']);
 Route::get('/skillup/tambah',  [App\Http\Controllers\SkillupController::class, 'tambah']);
 Route::post('/skillup/store',  [App\Http\Controllers\SkillupController::class, 'store']);
 

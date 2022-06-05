@@ -42,7 +42,7 @@
 
             <div class="col-lg-6" style="margin-right: -200px" >
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="{{asset("assets/images/Go startup HMSI1.png")}}" alt="">
+                <img src="{{asset("assets/images/listt.png")}}" alt="">
               </div>
             </div>
           </div>

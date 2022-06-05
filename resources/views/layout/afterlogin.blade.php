@@ -79,6 +79,7 @@
                 </form>
             </div></a></div></li>
             </ul>
+            
             <a class='menu-trigger'>
                 <span>Menu</span>
             </a>
@@ -105,6 +106,7 @@
         @else
         @endguest
     </ul>
+  
   </header>
     <!-- ***** Header Area End ***** -->
 {{-- startcontent --}}

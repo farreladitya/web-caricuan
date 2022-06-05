@@ -5,6 +5,7 @@
               <li class="scroll-to-section"><a href="/applist">Applicant List</a></li>
               <li class="scroll-to-section"><a href="#about" class="active">Skill Up</a></li>
               <li class="scroll-to-section"><a href="#pricing">Find Job</a></li>
+              
 @endsection
 
 @section('content')
