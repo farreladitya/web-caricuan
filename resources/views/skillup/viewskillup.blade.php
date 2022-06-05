@@ -25,6 +25,11 @@
       </div>
     </div>
     <div class="container">
+      <div class="row" >
+        <div class="gradient-button mt-3 mb-3 wow fadeInLeft d-flex justify-content-center" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
+            <a href="/skillup/tambah"> Create New Skill Up</a>
+        </div>
+  </div>
       <div class="row wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
         <table class="table">
             <tr>
@@ -40,8 +45,8 @@
                 <td>{{ $s->pembicara}}</td>
                 <td>{{ $s->link_video}}</td>
                 <td>
-                    <a href="/skillup/edit/{{ $s->id }}" style="color: rgb(14, 197, 30)">Accept</a>
-                    <a href="/skillup/edit/{{ $s->id }}" style="color: rgb(194, 15, 15)">Decline</a>
+                    <a href="/skillup/edit/{{ $s->id }}" style="color: rgb(14, 197, 30)">Edit</a>
+                    <a href="/skillup/hapus/{{ $s->id }}" style="color: rgb(194, 15, 15)">Hapus</a>
                 </td>
             </tr>
             @endforeach

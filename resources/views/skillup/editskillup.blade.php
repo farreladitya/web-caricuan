@@ -70,9 +70,10 @@
                 {{ csrf_field() }}
                 <input type="hidden" name="id" value="{{ $s->id }}"> <br/>
                 <div class="form-group">
-                    <label for="logos">Logo</label>
-                    <input type="text" class="form-control" id="logos" name="logos" placeholder="Logo" value="{{ $s->logo }}" required>
-                  </div>                <div class="form-group">
+                  <label for="logo">Logo</label>
+                        <input type="file" class="form-control" id="logo" name="logo" placeholder="Logo" value="{{ $s->logo }}" required>
+                      </div>              
+                   <div class="form-group">
                     <label for="topik">Topic</label>
                     <input type="text" class="form-control" id="topik" name="topik" aria-describedby="emailHelp" placeholder="Topic" value="{{ $s->topik }}" required>
                   </div>
@@ -83,6 +84,10 @@
                 <div class="form-group">
                     <label for="pembicara">Speakers</label>
                     <input id="autoresizing" type="text" class="form-control" id="pembicara" name="pembicara" aria-describedby="emailHelp" placeholder="Speakers" value="{{ $s->pembicara }}" required>
+                  </div>
+                <div class="form-group">
+                    <label for="pembicara">Link</label>
+                    <input id="autoresizing" type="text" class="form-control" id="link_video" name="link_video" aria-describedby="emailHelp" placeholder="Speakers" value="{{ $s->link_video }}" required>
                   </div>
                 <div class="row">
                     <div class="col-4"></div>

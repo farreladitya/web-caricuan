@@ -57,10 +57,10 @@ class SkillupController extends Controller
             'topik' => $request->topik,
             'penyelenggara' => $request->penyelenggara,
             'pembicara' => $request->pembicara,
-            'link_video' => $request->Link_video,
+            'link_video' => $request->link_video,
         ]);
         // alihkan halaman ke halaman pegawai
-        return redirect('/skillup');
+        return redirect('/skillup/view');
     }
 
     public function detail($id)
@@ -90,7 +90,7 @@ class SkillupController extends Controller
             'link_video' => $request->link_video,
 	]);
 	// alihkan halaman ke halaman pegawai
-	return redirect('/skillup/detail/'.$request->id);
+	return redirect('/skillup/view');
     }
     public function hapus($id)
     {

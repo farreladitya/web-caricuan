@@ -43,9 +43,13 @@ Route::post('/pmf', [App\Http\Controllers\PMFController::class, 'storeValue']);
 
 
 // // Applist FARREL
-// Route::get('/applist', [App\Http\Controllers\ApplistController::class, 'index']);
-// Route::get('/applist/tambah',  [App\Http\Controllers\ApplistController::class, 'tambah']);
-// Route::post('/applist/store',  [App\Http\Controllers\ApplistController::class, 'store']);
+Route::get('/applist', [App\Http\Controllers\ApplistController::class, 'index']);
+Route::get('/applist/tambah',  [App\Http\Controllers\ApplistController::class, 'tambah']);
+Route::post('/applist/store',  [App\Http\Controllers\ApplistController::class, 'store']);
+// Skillup Aida
+Route::get('/applist', [App\Http\Controllers\SkillupController::class, 'index']);
+Route::get('/skillup/tambah',  [App\Http\Controllers\SkillupController::class, 'tambah']);
+Route::post('/skillup/store',  [App\Http\Controllers\SkillupController::class, 'store']);
 
 
 Route::get('/findjob', [App\Http\Controllers\FindJobController::class, 'index']);
@@ -59,8 +63,7 @@ Auth::routes();
 
 
 Route::middleware('role:admin')->get('/skillup/edit/{id}', [App\Http\Controllers\SkillupController::class, 'edit'])->name('editskillup');
-Route::middleware('role:admin')->get('/inputskillup', [App\Http\Controllers\SkillupController::class, 'tambah'])->name('inputskillup');
-Route::middleware('role:admin')->post('/skillup/update', [App\Http\Controllers\ApplistController::class, 'update'])->name('editskillup');
+Route::middleware('role:admin')->post('/skillup/update', [App\Http\Controllers\SkillupController::class, 'update'])->name('editskillup');
 Route::get('/skillup', [App\Http\Controllers\SkillupController::class, 'index'])->name('skillup');
 Route::middleware('role:admin')->get('/skillup/detail/{id}', [App\Http\Controllers\SkillupController::class, 'detail'])->name('detailskillup');
 Route::middleware('role:admin')->get('/skillup/hapus/{id}', [App\Http\Controllers\SkillupController::class, 'hapus'])->name('detailskillup');
@@ -83,7 +86,7 @@ Route::middleware('role:company')->get('//applist/hapus/{id}', [App\Http\Control
 Route::middleware('role:company')->get('//applist/view', [App\Http\Controllers\ApplistController::class, 'view'])->name('viewapplist');
 Route::middleware('role:company')->post('/applist/detail/{id}','ApplistController@store');
 
-Route::middleware('role:admin')->post('/skillup/store','SkillupController@store');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
