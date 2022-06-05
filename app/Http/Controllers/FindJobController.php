@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Gambar;
 
 
 class FindJobController extends Controller
@@ -41,6 +42,42 @@ class FindJobController extends Controller
     // passing data pegawai yang didapat ke view edit.blade.php
     return view('findjob.detailfindjob',['lowongan' => $lowongan]);
 
+    }
+    public function upload(){
+		$gambar = Gambar::get();
+		return view('findjob.uploadfindjob',['gambar' => $gambar]);
+	}
+ 
+	public function proses_upload(Request $request){
+		$this->validate($request, [
+			'file' => 'required|file|mimes:pdf',
+			'keterangan' => 'required',
+		]);
+ 
+		// menyimpan data file yang diupload ke variabel $file
+		$file = $request->file('file');
+ 
+		$nama_file = time()."_".$file->getClientOriginalName();
+ 
+      	        // isi dengan nama folder tempat kemana file diupload
+		$tujuan_upload = 'data_file';
+		$file->move($tujuan_upload,$nama_file);
+ 
+		Gambar::create([
+			'file' => $nama_file,
+			'keterangan' => $request->keterangan,
+		]);
+        
+        
+		return redirect()->back();
+	}
+    public function hapus($id)
+    {
+	// menghapus data pegawai berdasarkan id yang dipilih
+	DB::table('gambar')->where('id',$id)->delete();
+
+	// alihkan halaman ke halaman pegawai
+	return redirect('/uploadfindjob');
     }
 
 

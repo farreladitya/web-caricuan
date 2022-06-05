@@ -70,7 +70,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="mt-5">
                         <div  class="apply-button" >
-                            <a type="submit" value="APPLY">Apply CV</a>
+                            <a href="/uploadfindjob" type="submit" value="APPLY">Apply CV</a>
                         </div>
                     </form>
 
