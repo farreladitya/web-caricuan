@@ -3,7 +3,6 @@
 
 @section('navbar')
               <li class="scroll-to-section"><a href="/home">Home</a></li>
-              <li class="scroll-to-section"><a href="/applist">Applicant List</a></li>
               <li class="scroll-to-section"><a href="/skillup">Skill Up</a></li>
               <li class="scroll-to-section"><a href="/findjob" class="active">Find Job</a></li>
 @endsection
@@ -55,11 +54,11 @@
    <div class="container">
 
             <div class="row wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
+              @foreach($lowongan as $p)
                 <div class="grey-box mb-5 mt-5">
                 <div class="col-9">
-                <div class="row">
-                  @foreach($lowongan as $p)
-                <div class="job-name">
+                  <div class="row">
+                    <div class="job-name">
                     {{ $p ->jabatan }}, {{ $p ->perusahaan }}
                 </div>
             </div>
@@ -71,11 +70,11 @@
         </div>
         <div class="col-3">
             <a href="/findjob/detail/{{ $p ->id }}" class="detailfj-btn detail-text">Detail</a>
-            @endforeach
-
-            </div>
-            </div>
+            
+          </div>
         </div>
+        @endforeach
+      </div>
 
 
         {{-- <table class="table">

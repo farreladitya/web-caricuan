@@ -3,7 +3,6 @@
 
 @section('navbar')
               <li class="scroll-to-section"><a href="/home">Home</a></li>
-              <li class="scroll-to-section"><a href="/applist">Applicant List</a></li>
               <li class="scroll-to-section"><a href="/skillup" class="active">Skill Up</a></li>
               <li class="scroll-to-section"><a href="/findjob">Find Job</a></li>
 @endsection

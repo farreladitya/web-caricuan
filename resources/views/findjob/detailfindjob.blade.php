@@ -1,7 +1,6 @@
 @extends('layout.afterlogin')
 @section('navbar')
               <li class="scroll-to-section"><a href="/home">Home</a></li>
-              <li class="scroll-to-section"><a href="/applist" class="active">Applicant List</a></li>
               <li class="scroll-to-section"><a href="#about">Skill Up</a></li>
               <li class="scroll-to-section"><a href="#pricing">Find Job</a></li>
 @endsection
@@ -33,7 +32,7 @@
 
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="{{asset("assets/images/detailed-list.png")}}" alt="" style="width: 600px">
+                <img src="{{asset("assets/images/detailed-list.png")}}" alt="" style="width: 500px">
               </div>
             </div>
           </div>
