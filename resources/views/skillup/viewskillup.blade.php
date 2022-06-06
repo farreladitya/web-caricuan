@@ -24,9 +24,9 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" style="margin-top: -50px">
       <div class="row" >
-        <div class="gradient-button mt-3 mb-3 wow fadeInLeft d-flex justify-content-center" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
+        <div class="gradient-button mb-3 wow fadeInLeft d-flex justify-content-center" data-wow-duration="1s" data-wow-delay="0.5s" style="left: 500px" >
             <a href="/skillup/tambah"> Create New Skill Up</a>
         </div>
   </div>

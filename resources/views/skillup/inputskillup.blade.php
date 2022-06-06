@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h2>Recommendation</h2>
+            <h4>Input <em>Data For</em> Recommendation</h4>
             <div class="gradient-button mt-3">
                 <a href="/skillup">Back</a>
             </div>
