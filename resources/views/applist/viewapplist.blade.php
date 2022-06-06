@@ -30,24 +30,21 @@
             <tr>
                 <th>Name</th>
                 <th>Email</th>
-                <th>PMF Result</th>
                 <th>CV</th>
+                <th>Keterangan</th>
                 <th>Status</th>
             </tr>
-            @foreach($lowongan as $p)
+             @foreach($users as $u)
             <tr>
-                <td>{{ $p->perusahaan }}</td>
-                <td>{{ $p->jabatan }}</td>
-
+                <td>{{ $u->name}}</td>
+                <td>{{ $u->email }}</td>
+                @endforeach
                 @foreach($gambar as $g)
-                <td><a href="{asset('/data_file/'.$g->file) }}">View</a></td>
+                <td><a href="{{asset('/data_file/'.$g->file) }}">View</a></td>
+                <td>{{ $g->keterangan }}</td>
                 <td>
-                    <a href="/applist/edit/{{ $p->id }}">View</a>
-                  @endforeach
-                </td>
-                <td>
-                    <a href="/applist/edit/{{ $p->id }}" style="color: rgb(14, 197, 30)">Accept</a>
-                    <a href="/applist/edit/{{ $p->id }}" style="color: rgb(194, 15, 15)">Decline</a>
+                    <a href="mailto:test@example.com?subject=Congratulation!&body=You have been accepted to our company. Please contact us on (031) 5023341" style="color: rgb(14, 197, 30)">Accept</a>
+                    <a href="/applist/edit/" style="color: rgb(194, 15, 15)">Decline</a>
                 </td>
             </tr>
             @endforeach

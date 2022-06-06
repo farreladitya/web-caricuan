@@ -91,7 +91,7 @@ Route::middleware('role:company')->get('/applist/detail/{id}', [App\Http\Control
 Route::middleware('role:company')->get('/applist/edit/{id}', [App\Http\Controllers\ApplistController::class, 'edit'])->name('editapplist');
 Route::middleware('role:company')->post('/applist/update', [App\Http\Controllers\ApplistController::class, 'update'])->name('editapplist');
 Route::middleware('role:company')->get('//applist/hapus/{id}', [App\Http\Controllers\ApplistController::class, 'hapus'])->name('detailapplist');
-Route::middleware('role:company')->get('//applist/view', [App\Http\Controllers\ApplistController::class, 'view'])->name('viewapplist');
+Route::middleware('role:company')->get('/applist/view', [App\Http\Controllers\ApplistController::class, 'view'])->name('viewapplist');
 Route::middleware('role:company')->post('/applist/detail/{id}','ApplistController@store');
 
 

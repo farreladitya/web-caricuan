@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Models\User;
+use App\Models\Gambar;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\Gambar;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 
 class FindJobController extends Controller
@@ -44,31 +46,31 @@ class FindJobController extends Controller
 
     }
     public function upload(){
-		$gambar = Gambar::get();
-		return view('findjob.uploadfindjob',['gambar' => $gambar]);
+		$gambar = Gambar::with('user')->get();
+		$user = User::with('gambar')->get();
+
+		return view('findjob.uploadfindjob',compact('gambar','user'));
 	}
- 
+
 	public function proses_upload(Request $request){
 		$this->validate($request, [
 			'file' => 'required|file|mimes:pdf',
 			'keterangan' => 'required',
 		]);
- 
+
 		// menyimpan data file yang diupload ke variabel $file
 		$file = $request->file('file');
- 
+
 		$nama_file = time()."_".$file->getClientOriginalName();
- 
+
       	        // isi dengan nama folder tempat kemana file diupload
 		$tujuan_upload = 'data_file';
 		$file->move($tujuan_upload,$nama_file);
- 
-		Gambar::create([
-			'file' => $nama_file,
-			'keterangan' => $request->keterangan,
-		]);
-        
-        
+        DB::table('gambar')->insert([
+            'file' => $nama_file,
+            'keterangan' => $request->keterangan,
+            'id_users' => Auth::user()->id,
+        ]);
 		return redirect()->back();
 	}
     public function hapus($id)

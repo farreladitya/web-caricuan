@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Gambar;
+use App\Models\User;
+use App\Models\Lowongan;
 
 
 class ApplistController extends Controller
@@ -38,31 +40,39 @@ class ApplistController extends Controller
     {
 	// memanggil view tambah
 	return view('applist.inputapplist');
-    
+
 
     }
     public function view()
     {
     // mengambil data dari table pegawai
-    $lowongan = DB::table('lowongan')->get();
+    $gambar = DB::table('gambar')->get();
+    $users = DB::table('users')->get();
 
-
-    $gambar = Gambar::get();
+    // $gambar = Gambar::get();
 
 
     // mengirim data pegawai ke view index
-    return view('applist.viewapplist',['lowongan' => $lowongan]); 
-    return view('applist.viewapplist',['gambar' => $gambar]); 
+    return view('applist.viewapplist', ['gambar' => $gambar, 'users' => $users]);
+    // return view('applist.viewapplist',['gambar' => $gambar]);
 
 
 
 
+    }
+
+    public function hubung() {
+        $gambar = DB::table('gambar')->
+        join('users', 'users.id', '=', 'gambar.id_users')->
+        get();
+        return view('applist.viewapplist',['gambar' => $gambar]);
     }
     // method untuk insert data ke table pegawai
     public function store(Request $request)
     {
         // insert data ke table pegawai
         DB::table('lowongan')->insert([
+            'id_users' => $request->id_users,
             'perusahaan' => $request->perusahaan,
             'jabatan' => $request->jabatan,
             'lokasi' => $request->lokasi,

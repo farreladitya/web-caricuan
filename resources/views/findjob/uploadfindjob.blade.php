@@ -10,8 +10,8 @@
 		<div class="container">
 
 			<h2 class="text-center my-5">Tutorial Laravel #30 : Membuat Upload File Dengan Laravel</h2>
-			
-			<div class="col-lg-8 mx-auto my-5">	
+
+			<div class="col-lg-8 mx-auto my-5">
 
 				@if(count($errors) > 0)
 				<div class="alert alert-danger">
@@ -36,7 +36,7 @@
 
 					<input type="submit" value="Upload" class="btn btn-primary">
 				</form>
-				
+
 				<h4 class="my-5">Data</h4>
 
 				<table class="table table-bordered table-striped">

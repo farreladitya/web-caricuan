@@ -14,7 +14,10 @@ class CreateGambarsTable extends Migration
     public function up()
     {
         Schema::create('gambar', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id('idgambar');
+            $table->integer('id_users');
+            // $table->unsignedBigInteger('id_users');
+            // $table->foreign('id_users')->references('id')->on('users');
             $table->string('file');
             $table->string('keterangan');
             $table->timestamps();
