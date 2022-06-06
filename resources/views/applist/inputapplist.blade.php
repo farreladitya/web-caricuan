@@ -17,7 +17,7 @@
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12" style="margin-left: -100px">
-                    <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Masukkan Lowongan</p>
+                    <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Input Vacancies</p>
                 </div>
                 </div>
 
@@ -56,9 +56,9 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h2>Lowongan</h2>
+            <h2>Vacancies</h2>
             <div class="gradient-button mt-3">
-                <a href="/applist">Kembali</a>
+                <a href="/applist">Back</a>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@
                 <div class="row">
                     <div class="col-4"></div>
                     <div class="col-6">
-                    <button type="submit" class="btn btn-primary">Simpan Data</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
                     </form>
                     </div>
 

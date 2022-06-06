@@ -157,7 +157,7 @@
           <div class="content">
             <h3>Join With Us!</h3>
             <p>
-              Cari.Cuan adalah sebuah platform yang menghubungkan para pelamar dengan penyedia lapangan pekerjaan
+            Cari.Cuan is a platform that connects applicants with job providers for a better future
             </p>
             <button class="btn transparent" id="sign-up-btn">
               Sign up
@@ -169,7 +169,7 @@
           <div class="content">
             <h3>One of us ?</h3>
             <p>
-                Cari.Cuan adalah sebuah platform yang menghubungkan para pelamar dengan penyedia lapangan pekerjaan
+            Cari.Cuan is a platform that connects applicants with job providers for a better future
             </p>
             <button class="btn transparent" id="sign-in-btn">
             Sign in

@@ -14,9 +14,9 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h2>Rekomendasi</h2>
+            <h2>Recommendation</h2>
             <div class="gradient-button mt-3">
-                <a href="/skillup">Kembali</a>
+                <a href="/skillup">Back</a>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-4"></div>
                     <div class="col-6">
-                    <button type="submit" class="btn btn-primary">Simpan Data</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
                     </form>
                     </div>
 

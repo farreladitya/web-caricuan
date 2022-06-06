@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Laravel #30 : Membuat Upload File Dengan Laravel</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+@extends('layout.afterlogin')
+@section('navbar')
+              <li class="scroll-to-section"><a href="/home">Home</a></li>
+              <li class="scroll-to-section"><a href="/applist" class="active">Applicant List</a></li>
+              <li class="scroll-to-section"><a href="#about">Skill Up</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Find Job</a></li>
+@endsection
 
-</head>
-<body>
-	<div class="row">
-		<div class="container">
-
-			<h2 class="text-center my-5">Tutorial Laravel #30 : Membuat Upload File Dengan Laravel</h2>
-
-			<div class="col-lg-8 mx-auto my-5">
+@section('content')	
+			<div class="mx-auto my-5" >
 
 				@if(count($errors) > 0)
 				<div class="alert alert-danger">
@@ -20,45 +16,67 @@
 					@endforeach
 				</div>
 				@endif
-
-				<form action="/uploadfindjob/proses" method="POST" enctype="multipart/form-data">
+				<div class="whitespace" style="color:#fff;font-size : 70px;">
+					<br>
+				</div>
+				<div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h1 class="d-flex justify-content-center">UPLOAD<em> CV</em></h1>
+          </div>
+</div>
+		<div class="row">
+			<div class="col-2 my-auto">
+				<img src="{{URL::asset('assets/images/services-left-dec.png')}}">
+			</div>
+			<div class="col-8">
+			<div>
+				<form action="/uploadfindjob/proses"  method="POST" enctype="multipart/form-data">
 					{{ csrf_field() }}
 
 					<div class="form-group">
-						<b>File Gambar</b><br/>
-						<input type="file" name="file">
+						<b>Image File</b><br/>
+						<input type="file" name="file" class="mt-2">
 					</div>
 
 					<div class="form-group">
-						<b>Keterangan</b>
+						<b>Description</b>
 						<textarea class="form-control" name="keterangan"></textarea>
 					</div>
 
 					<input type="submit" value="Upload" class="btn btn-primary">
 				</form>
-
-				<h4 class="my-5">Data</h4>
-
-				<table class="table table-bordered table-striped">
-					<thead>
-						<tr>
-							<th width="1%">File</th>
-							<th>Keterangan</th>
-							<th width="1%">OPSI</th>
-						</tr>
-					</thead>
-					<tbody>
-						@foreach($gambar as $g)
-						<tr>
-							<td><a href="{{asset('/data_file/'.$g->file) }}">View</a></td>
-							<td>{{$g->keterangan}}</td>
-							<td><a class="btn btn-danger" href="/uploadfindjob/hapus/{{ $g->id }}">HAPUS</a></td>
-						</tr>
-						@endforeach
-					</tbody>
-				</table>
+</div>
+			</div>
+			<div class="col-2">
 			</div>
 		</div>
-	</div>
-</body>
-</html>
+				<div class="row">
+					<div class="col-2">
+					</div>
+					<div class="col-8">
+					<h4 class="my-5">Data</h4>
+
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<th width="1%">File</th>
+			<th>Description</th>
+			<th width="1%">Option</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach($gambar as $g)
+		<tr>
+			<td><a href="{{asset('/data_file/'.$g->file) }}">View</a></td>
+			<td>{{$g->keterangan}}</td>
+			<td><a class="btn btn-danger" href="/uploadfindjob/hapus/{{ $g->id }}">HAPUS</a></td>
+		</tr>
+		@endforeach
+	</tbody>
+</table>
+</div>
+					</div>
+					<div class="col-2">
+					</div>
+				</div>
+				
+			@endsection

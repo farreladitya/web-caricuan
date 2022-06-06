@@ -52,14 +52,14 @@
           <div class="service-item first-service">
             <div class="icon"></div>
             <h4>Know Your Skills</h4>
-            <p>Plan My Future helps you to identify your interests, talents and skills that will be useful in the world of work</p>
+            <p>Plan My Future helps you to identify that will be useful in the work</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item second-service">
             <div class="icon"></div>
             <h4>Best Psychology Questions</h4>
-            <p>Plan My Future provides psychological questions that have been tested in various psychological tests in Indonesia</p>
+            <p>Plan My Future provides psychological questions</p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -104,8 +104,8 @@
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Create Schedule</a></h4>
-                <p>Customize your Schedule</p>
+                <h4><a href="#">Upgrade skills</a></h4>
+                <p>Skills are growing</p>
               </div>
             </div>
             <div class="col-lg-6">
