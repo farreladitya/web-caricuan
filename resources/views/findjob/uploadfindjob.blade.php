@@ -5,7 +5,7 @@
               <li class="scroll-to-section"><a href="#pricing">Find Job</a></li>
 @endsection
 
-@section('content')	
+@section('content')
 			<div class="mx-auto my-5" >
 
 				@if(count($errors) > 0)
@@ -67,7 +67,7 @@
 		<tr>
 			<td><a href="{{asset('/data_file/'.$g->file) }}">View</a></td>
 			<td>{{$g->keterangan}}</td>
-			<td><a class="btn btn-danger" href="/uploadfindjob/hapus/{{ $g->id }}">HAPUS</a></td>
+			<td><a class=" btn_del" href="/uploadfindjob/hapus/{{ $g->id }}">HAPUS</a></td>
 		</tr>
 		@endforeach
 	</tbody>
@@ -77,5 +77,5 @@
 					<div class="col-2">
 					</div>
 				</div>
-				
+
 			@endsection

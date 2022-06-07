@@ -1820,6 +1820,12 @@ PopUp
     color: #fff;
     transition: all 0.3s;
 }
+.btn_del{
+    padding: 10px 20px;
+    background: #ff0000;
+    color: #fff;
+    transition: all 0.3s;
+}
 
 .btn_red {
     background: #4b8ef1;
