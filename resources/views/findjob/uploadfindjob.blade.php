@@ -32,7 +32,7 @@
 					{{ csrf_field() }}
 
 					<div class="form-group">
-						<b>Image File</b><br/>
+						<b>File</b><br/>
 						<input type="file" name="file" class="mt-2">
 					</div>
 
