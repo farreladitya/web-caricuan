@@ -15,7 +15,6 @@ class CreateSkillupTable extends Migration
     {
         Schema::create('skillup', function (Blueprint $table) {
             $table->id();
-            $table->string('logo');
             $table->string('topik');
             $table->string('penyelenggara');
             $table->string('pembicara');

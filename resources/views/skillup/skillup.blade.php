@@ -23,18 +23,18 @@
           <div class="col-lg-8 offset-lg-2">
             <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
               <h4 style="margin-top: -135px">We <em>Recommend</em> You</h4>
-                
+
               <p>Based on your background and skill, we recommend you some videos.</p>
             </div>
           </div>
         </div>
       </div>
-      
+
       <div class="row d-flex justify-content-center">
         @foreach ($skillup as $s)
         <div class="col-lg-3 mx-4">
           <div class="service-item first-service">
-            <img src="{{URL::asset('assets/images/ppkd.png')}}" style="width: 28%; height: 28%; display:block; margin-left: auto; margin-right:auto" alt="" >
+            <img src="{{URL::asset("img/cclogo1.png")}}" style="width: 70%; height: 70%; display:block; margin-left: auto; margin-right:auto" alt="" >
             <p class="kotak"> <b>Topic:</b>
               <br>
               {{$s->topik}} <br> <b>Organizer:</b>  <br> {{$s->penyelenggara}} <br> <b>Speakers: </b> <br> {{$s->pembicara}}
@@ -59,7 +59,7 @@
           </div>
           @endforeach
         </div>
-      
+
     </div>
 
     <div id="about" style="margin-left: 170px; margin-top:135px; margin-bottom:135px">
@@ -94,7 +94,7 @@
         </div>
       </div>
     </div>
- 
+
     <div class="row d-flex justify-content-center">
       @foreach ($skillup2 as $s)
       <div class="col-lg-3 mx-4">
@@ -111,7 +111,7 @@
         </div>
         @endforeach
       </div>
-    
+
   </div>
 </div>
 

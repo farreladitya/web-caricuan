@@ -46,10 +46,11 @@ class FindJobController extends Controller
 
     }
     public function upload(){
-		$gambar = Gambar::with('user')->get();
-		$user = User::with('gambar')->get();
+		// mengambil data dari table pegawai
+    	$gambar = DB::table('gambar')->get();
 
-		return view('findjob.uploadfindjob',compact('gambar','user'));
+    	// mengirim data pegawai ke view index
+    	return view('findjob.uploadfindjob',['gambar' => $gambar]);
 	}
 
 	public function proses_upload(Request $request){
@@ -67,9 +68,11 @@ class FindJobController extends Controller
 		$tujuan_upload = 'data_file';
 		$file->move($tujuan_upload,$nama_file);
         DB::table('gambar')->insert([
+            'name' => $request->name,
+            'email' => $request->email,
             'file' => $nama_file,
             'keterangan' => $request->keterangan,
-            'id_users' => Auth::user()->id,
+
         ]);
 		return redirect()->back();
 	}

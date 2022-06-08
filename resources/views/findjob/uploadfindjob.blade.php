@@ -31,6 +31,14 @@
 				<form action="/uploadfindjob/proses"  method="POST" enctype="multipart/form-data">
 					{{ csrf_field() }}
 
+                    <div class="form-group">
+						<b>Nama</b>
+						<input type="text" class="form-control" name="name">
+					</div>
+                    <div class="form-group">
+						<b>Email</b>
+						<input type="text" class="form-control" name="email">
+					</div>
 					<div class="form-group">
 						<b>File</b><br/>
 						<input type="file" name="file" class="mt-2">

@@ -44,6 +44,9 @@ class LoginController extends Controller
         if ($user->hasRole('company')) {
             return redirect()->route('applist');
         }
+        elseif ($user->hasRole('admin')) {
+            return redirect()->route('viewskillup');
+        }
         return redirect()->route('home');
 
     }

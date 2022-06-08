@@ -72,7 +72,7 @@ class ApplistController extends Controller
     {
         // insert data ke table pegawai
         DB::table('lowongan')->insert([
-            'id_users' => $request->id_users,
+
             'perusahaan' => $request->perusahaan,
             'jabatan' => $request->jabatan,
             'lokasi' => $request->lokasi,

@@ -15,9 +15,8 @@ class CreateGambarsTable extends Migration
     {
         Schema::create('gambar', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_users');
-            // $table->unsignedBigInteger('id_users');
-            // $table->foreign('id_users')->references('id')->on('users');
+            $table->string('name');
+            $table->string('email');
             $table->string('file');
             $table->string('keterangan');
             $table->timestamps();

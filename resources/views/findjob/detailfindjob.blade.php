@@ -16,11 +16,11 @@
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12" style="margin-left: -100px">
-                    <p style="font-size: 75px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff">  {{ $p->perusahaan }} <br> <br> 
+                    <p style="font-size: 75px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff">  {{ $p->perusahaan }} <br> <br>
                         <span style="font-size: 25px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff; font-weight: 100;" class="text-center">{{ $p->jabatan }}</span>
                     </p>
-                    
-                    
+
+
 
                 </div>
                 </div>
@@ -55,7 +55,7 @@
             <div class="form-group">
                 {{-- <input type="text" class="form-control" id="perusahaan" name="perusahaan" placeholder="Company" value="{{ $p->perusahaan }}" readonly> --}}
               </div>
-              
+
               <div class="grey-boxfj mb-3">
                 <label for="tentang_lowongan" style="font-size: 30px; font-family: 'Poppins', sans-serif; color: rgb(3, 26, 61)"><u>ABOUT</u></label>
                 <p>{{ $p->tentang_lowongan }}</p>
@@ -76,8 +76,8 @@
                     </div>
                 </div>
 
-            
-            
+
+
                 </form>
                 @endforeach
   </div>
