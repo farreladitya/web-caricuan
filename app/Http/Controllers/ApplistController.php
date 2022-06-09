@@ -30,7 +30,7 @@ class ApplistController extends Controller
     public function index()
     {
     	// mengambil data dari table pegawai
-    	$lowongan = DB::table('lowongan')->get();
+    	$lowongan = DB::table('lowongan')->skip(3)->get();
 
     	// mengirim data pegawai ke view index
     	return view('applist.applist',['lowongan' => $lowongan]);
