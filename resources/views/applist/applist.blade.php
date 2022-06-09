@@ -17,11 +17,17 @@
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12" style="margin-left: -100px">
-                    <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Dream Jobs, Top Talent.<br> All in One Place </p>
+                    <p style="font-size: 45px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Dream Jobs,</p>
                 </div>
+                <div class="col-lg-12" style="margin-left: -100px">
+                  <p style="font-size: 45px; font-family: 'Poppins', sans-serif; margin-top: -30px; color: #ffff">Top Talent.</p>
+              </div>
+              <div class="col-lg-12" style="margin-left: -100px">
+                <p style="font-size: 45px; font-family: 'Poppins', sans-serif;  margin-top: -30px; color: #ffff">All in One Place </p>
+            </div>
                 </div>
 
-                <div class="row" style="margin-left: -210px">
+                {{-- <div class="row" style="margin-left: -210px">
                     <div class="col-6">
                         <form action="/applist/cari" method="GET">
                         <div class="form-group has-search center float-right">
@@ -35,7 +41,7 @@
                     </form>
 
                     </div>
-                </div>
+                </div> --}}
               </div>
             </div>
 
