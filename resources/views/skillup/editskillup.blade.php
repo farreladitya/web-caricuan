@@ -25,11 +25,7 @@
               @foreach ($skillup as $s )
             <form action="/skillup/update" method="post">
                 {{ csrf_field() }}
-                <input type="hidden" name="id" value="{{ $s->id }}"> <br/>
-                <div class="form-group">
-                  <label for="logo">Logo</label>
-                        <input type="file" class="form-control" id="logo" name="logo" placeholder="Logo" value="{{ $s->logo }}" required>
-                      </div>              
+                <input type="hidden" name="id" value="{{ $s->id }}"> <br/>            
                    <div class="form-group">
                     <label for="topik">Topic</label>
                     <input type="text" class="form-control" id="topik" name="topik" aria-describedby="emailHelp" placeholder="Topic" value="{{ $s->topik }}" required>

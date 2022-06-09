@@ -31,7 +31,7 @@
       </div>
 
       <div class="row d-flex justify-content-center">
-        @foreach ($skillup as $s)
+        @foreach ($skillup2 as $s)
         <div class="col-lg-3 mx-4">
           <div class="service-item first-service">
             <img src="{{URL::asset("img/cclogo1.png")}}" style="width: 70%; height: 70%; display:block; margin-left: auto; margin-right:auto" alt="" >
@@ -88,7 +88,7 @@
           </div>
           <div class="col-lg-6">
             <div class="right-image">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GCNJTx5Ij3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/L9PMxeYrl7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -96,16 +96,29 @@
     </div>
 
     <div class="row d-flex justify-content-center">
-      @foreach ($skillup2 as $s)
+      @foreach ($skillup as $s)
       <div class="col-lg-3 mx-4">
         <div class="service-item first-service">
-          <img src="{{URL::asset('assets/images/ppkd.png')}}" style="width: 28%; height: 28%; display:block; margin-left: auto; margin-right:auto" alt="" >
+          <img src="{{URL::asset("img/cclogo1.png")}}" style="width: 70%; height: 70%; display:block; margin-left: auto; margin-right:auto" alt="" >
           <p class="kotak"> <b>Topic:</b>
             <br>
             {{$s->topik}} <br> <b>Organizer:</b>  <br> {{$s->penyelenggara}} <br> <b>Speakers: </b> <br> {{$s->pembicara}}
           </p>
             <div class="d-flex justify-content-center">
-            <a href="{{$s->link_video}}" class="btn" style="background:#00E6E9; border-radius:25px"> Watch Now</a>
+            <a  class="btn btn-1 video-play-btn" style="background:#00E6E9; border-radius:25px"> Watch Now</a>
+          </div>
+          <div class="video-popup">
+            <div class="video-popup-inner">
+              <a href="/skillup"><i class="fas fa-times video-popup-close"></i></a>
+              <div class=" iframe-box">
+                <iframe
+                  id="player-1"
+                  src="{{$s->link_video}}"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
           </div>
           </div>
         </div>

@@ -53,7 +53,7 @@ class SkillupController extends Controller
     {
         // insert data ke table pegawai
         DB::table('skillup')->insert([
-            'logo' => $request->logo,
+            // 'logo' => $request->logo,
             'topik' => $request->topik,
             'penyelenggara' => $request->penyelenggara,
             'pembicara' => $request->pembicara,
@@ -83,7 +83,7 @@ class SkillupController extends Controller
     {
 	// update data pegawai
 	DB::table('skillup')->where('id',$request->id)->update([
-		    'logo' => $request->logo,
+		    // 'logo' => $request->logo,
             'topik' => $request->topik,
             'penyelenggara' => $request->penyelenggara,
             'pembicara' => $request->pembicara,

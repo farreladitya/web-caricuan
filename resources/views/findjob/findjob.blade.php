@@ -16,7 +16,7 @@
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12" style="margin-left: -100px">
-                    <p style="font-size: 35px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Dream Jobs, Top Talent.<br> All in One Place </p>
+                    <b style="font-size: 40px; font-family: 'Poppins', sans-serif; margin-top: 90px; color: #ffff"> Dream Jobs, Top Talent.<br> All in One Place </b>
                 </div>
                 </div>
 
@@ -24,15 +24,7 @@
                     <div class="col-6">
                         <form action="/applist/cari" method="GET">
                         <div class="form-group has-search center float-right">
-                        <input type="text" class="form-control" placeholder="Search for Position..." name="cari" value="{{ old('cari') }}">
                         </div>
-                    </div>
-                    <div class="col-2" >
-                        <div class="gradient-button">
-                            <a  type="submit" value="CARI">Search</a>
-                        </div>
-                    </form>
-
                     </div>
                 </div>
               </div>
